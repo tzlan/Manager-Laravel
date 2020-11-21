@@ -75,7 +75,32 @@
         <li>{{$offre->description}}</li>
         <li>{{$offre->start}}</li>
         <li>{{$offre->end}}</li>
-        <li>{{$offre->end}}</li>
     @endforeach
 
 </div>
+
+
+<table class="table table-sm table-dark">
+    <thead>
+    <tr>
+        <th scope="col">Reférence</th>
+        <th scope="col">Nom</th>
+        <th scope="col">Description</th>
+        <th scope="col">Debut</th>
+        <th scope="col">Fin</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+
+        @foreach($offres as $offre)
+            <td>{{$offre->id}}</td>
+            <td>{{$offre->name}}</td>
+            <td>{{$offre->description}}</td>
+            <td>{{$offre->start}}</td>
+            <td>{{$offre->end}}</td>
+        @endforeach
+    </tr>
+
+    </tbody>
+</table>
