@@ -81,6 +81,8 @@ Route::get('/inscription_offre', [App\Http\Controllers\ControllerOffre::class, '
 Route::post('/inscription_offre', [App\Http\Controllers\ControllerOffre::class, 'inscription_offre']);
 
 //Route lister entreprise
-Route::get('/lister_students', [App\Http\Controllers\ControllerOffre::class, 'lister_offres']);
+Route::get('/lister_offres', [App\Http\Controllers\ControllerOffre::class, 'lister_offres']);
 
+//<-----------------------------TUTEURS-------------------------------------->
 
+//<-----------------------------JURY-------------------------------------->

@@ -20,7 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11244e0a-5dd3-4679-b4a8-ceef9bf6ed6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/inscription_offres.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerJury.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerTuteur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerEntreprise.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerEntreprise.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerOffre.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerOffre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerStudent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index_entreprise.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index_entreprise.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index_students.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index_students.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/inscription_entreprise.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/entreprises/inscription_entreprise.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/inscription_offres.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/offres/inscription_offres.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/inscription_students.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students/inscription_students.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/lister_entreprises.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/entreprises/lister_entreprises.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/lister_offres.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/offres/lister_offres.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/lister_students.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students/lister_students.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/navbarre.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navbarre.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,12 +175,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Shazam\Desktop\Unniv\WEB\NouveauProjet\GestionStage\public\images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Shazam\Desktop\Unniv\WEB\NouveauProjet\GestionStage\resources\lang" />
       <recent name="C:\Users\Shazam\Desktop\Unniv\WEB\NouveauProjet\GestionStage\resources\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Shazam\Desktop\Unniv\WEB\NouveauProjet\GestionStage\resources\views\enterprises" />
+      <recent name="C:\Users\Shazam\Desktop\Unniv\WEB\NouveauProjet\GestionStage\resources\views\students" />
+      <recent name="C:\Users\Shazam\Desktop\Unniv\WEB\NouveauProjet\GestionStage\resources\views\offres" />
+      <recent name="C:\Users\Shazam\Desktop\Unniv\WEB\NouveauProjet\GestionStage\public\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -189,7 +207,8 @@
       <workItem from="1605814812662" duration="11647000" />
       <workItem from="1605864137411" duration="617000" />
       <workItem from="1605864928099" duration="149000" />
-      <workItem from="1605984285401" duration="298000" />
+      <workItem from="1605984285401" duration="5653000" />
+      <workItem from="1605993009813" duration="747000" />
     </task>
     <servers />
   </component>

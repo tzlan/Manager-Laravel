@@ -42,22 +42,21 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-
             <li class="nav-item active">
-                <a class="nav-link" href="#">Creer une offre<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="lister_offres">Stages <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="lister_students">Etudiants en recherche<span class="sr-only">(current)</span></a>
             </li>
 
 
 
-            <li class="nav-item active">
-                <a class="nav-link" href=""> Etudiants Disponibles <span class="sr-only">(current)</span></a>
-            </li>
 
             <li class="nav-item active">
                 <a class="nav-link" href="#">Connection</a><span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link " href="inscription_entreprise">Inscription</a><span class="sr-only">(current)</span></a>
+                <a class="nav-link " href="inscription_students">Inscription</a><span class="sr-only">(current)</span></a>
             </li>
         </ul>
     </div>
@@ -68,19 +67,10 @@
 
 
 <div style="text-align: center;"><h1> Les offres </h1>
+    <br><br><br><br>
 
-    @foreach($offres as $offre)
-        <li>{{$offre->id}}</li>
-        <li>{{$offre->name}}</li>
-        <li>{{$offre->description}}</li>
-        <li>{{$offre->start}}</li>
-        <li>{{$offre->end}}</li>
-    @endforeach
-
-</div>
-
-
-<table class="table table-sm table-dark">
+    <div class="container">
+<table  class=" table table-striped">
     <thead>
     <tr>
         <th scope="col">Reférence</th>
@@ -91,16 +81,18 @@
     </tr>
     </thead>
     <tbody>
-    <tr>
+
 
         @foreach($offres as $offre)
+            <tr>
             <td>{{$offre->id}}</td>
             <td>{{$offre->name}}</td>
             <td>{{$offre->description}}</td>
             <td>{{$offre->start}}</td>
             <td>{{$offre->end}}</td>
+            </tr>
         @endforeach
-    </tr>
 
-    </tbody>
+</div>
+    </div>
 </table>

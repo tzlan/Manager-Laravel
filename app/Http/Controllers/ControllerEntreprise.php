@@ -12,12 +12,12 @@ class ControllerEntreprise extends Controller
 
     public function lister_entreprises(){
         $entreprises = Entreprise::all();//Fonction qui liste
-        return view('/lister_entreprises',[
+        return view('entreprises/lister_entreprises',[
             'entreprises'=> $entreprises,
         ]);
     }
     public function formulaire(){
-        return view('inscription_entreprise');
+        return view('entreprises/inscription_entreprise');
     }
     public function inscription_entreprise(){
 

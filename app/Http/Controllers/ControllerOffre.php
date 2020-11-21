@@ -11,12 +11,12 @@ class ControllerOffre extends Controller
 {
     public function lister_offres(){
         $offres = Offre::all();//Fonction qui liste les offres
-        return view('/lister_offres',[
+        return view('offres/lister_offres',[
             'offres'=> $offres,
         ]);
     }
     public function formulaire(){
-        return view('inscription_offres');
+        return view('offres/inscription_offres');
     }
     public function inscription_offre(){
 

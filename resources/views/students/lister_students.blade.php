@@ -67,16 +67,47 @@
 <br><br><br><br>
 
 
+
+
+
+
+
+
 <div style="text-align: center;"><h1> Les étudiants </h1>
 
-    @foreach($students as $student)
-       <li>{{$student->name}}</li>
-        <li>{{$student->first_name}}</li>
-        <li>{{$student->class}}</li>
-        <li>{{$student->cv}}</li>
-        <li>{{$student->status}}</li>
+
+
+
+
+
+
+
+<div class="container">
+    <table  class=" table table-striped">
+        <thead>
+        <tr>
+
+            <th scope="col">Nom</th>
+            <th scope="col">Prénom</th>
+            <th scope="col">Classe</th>
+            <th scope="col">Cv</th>
+            <th scope="col">Statut</th>
+
+        </tr>
+        </thead>
+        <tbody>
+
+
+        @foreach($students as $student)
+            <tr>
+                <td>{{$student->name}}</td>
+                <td>{{$student->first_name}}</td>
+                <td>{{$student->class}}</td>
+                <td>{{$student->cv}}</td>
+                <td>{{$student->status}}</td>
+            </tr>
     @endforeach
 
 </div>
-
-
+</div>
+</table>

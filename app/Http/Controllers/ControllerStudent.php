@@ -11,12 +11,12 @@ class ControllerStudent extends Controller
 {
     public function lister_etudiants(){
         $students = Student::all();//Fonction qui liste les étudiants
-        return view('/lister_students',[
+        return view('students/lister_students',[
             'students'=> $students,
         ]);
     }
     public function formulaire(){
-        return view('inscription_students');
+        return view('students/inscription_students');
     }
     public function inscription_students(){
 

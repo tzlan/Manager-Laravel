@@ -36,15 +36,13 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark .bg-danger " style="background-color: #d41010;">
 
-    <a class="navbar-brand" href="#">Université Paris Nanterre</a>
+    <a class="navbar-brand" href="accueil.blade.php">Université Paris Nanterre  </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
-            </li>
+
             <li class="nav-item active">
                 <a class="nav-link" href="inscription_offre">Creer une offre<span class="sr-only">(current)</span></a>
             </li>
