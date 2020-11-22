@@ -41,4 +41,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * @return Student|Entreprise|Jury|Tuteur
+     */
+    public function role()
+    {
+        return $this->morphTo();
+    }
 }
