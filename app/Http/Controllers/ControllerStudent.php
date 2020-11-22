@@ -32,7 +32,7 @@ class ControllerStudent extends Controller
 
         ]);
 
-        $entreprise = Student::create([
+        $student = Student::create([
             'name' => request('name'),
             'first_name' => request('first_name'),
             'class' => request('class'),
@@ -42,6 +42,19 @@ class ControllerStudent extends Controller
             'status' => request('status'),
 
         ]);
+
+        // Création de l'utilisateur relié à ĺ'étudiant.
+        $user = User::make([                // make() ne crée pas l'utilisateur en base de données, cela est nécessaire
+            'email' => request('email'),    // dans ce cas, parce que le rôle (non-nullable) n'a pas été attribué.
+            'name' => request('name'),
+            'password' => bcrypt(request('password')),
+            // Ajouter les champs manquants.
+        ]);
+
+        // Cette méthode se charge de lier automatiquement les entités via la fonction User::role()
+        // Pour récupérer le rôle de l'utilisateur, il suffit de faire $user->role (sans les parenthèses).
+        $user->role()->associate($student);
+        $user->save();  // Maintenant l'utilisateur est inséré en base de données.
 
         return view('prise_en_compte_inscription');
 
