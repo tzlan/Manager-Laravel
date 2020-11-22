@@ -50,15 +50,6 @@
 
     <form action="/inscription_offre" method="post">
         {{csrf_field()}}
-        <small  class="form-text text-muted">
-            Saisir votre ID
-        </small>
-        <p> <input type="text" name="id" placeholder="Ref offre" ></p>
-        @if($errors->has('id'))
-            <p>{{$errors->first('id')}}</p>
-
-        @endif
-
 
         <p>   <input type="text" name="name" placeholder="Nom de l'offre"></p>
         @if($errors->has('name'))

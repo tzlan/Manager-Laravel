@@ -22,7 +22,6 @@ class ControllerStudent extends Controller
 
 
         request()->validate([
-            'id' => ['required'],
             'name' => ['required'],
             'first_name' => ['required'],
             'class' => ['required'],
@@ -34,7 +33,6 @@ class ControllerStudent extends Controller
         ]);
 
         $entreprise = Student::create([
-            'id' => request('id'),
             'name' => request('name'),
             'first_name' => request('first_name'),
             'class' => request('class'),

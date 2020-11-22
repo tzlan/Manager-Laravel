@@ -50,15 +50,6 @@
 
     <form action="/inscription_students" method="post">
         {{csrf_field()}}
-        <small  class="form-text text-muted">
-            Saisir votre ID
-        </small>
-        <p> <input type="text" name="id" placeholder="Id Etudiant " ></p>
-        @if($errors->has('id'))
-            <p>{{$errors->first('id')}}</p>
-
-        @endif
-
 
         <p>   <input type="text" name="name" placeholder="Nom de l'étudiant"></p>
         @if($errors->has('name'))

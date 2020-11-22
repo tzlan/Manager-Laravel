@@ -23,7 +23,6 @@ class ControllerEntreprise extends Controller
 
 
             request()->validate([
-                'id' => ['required'],
                 'name' => ['required'],
                 'no_rue' => ['required'],
                 'ville' => ['required'],
@@ -32,7 +31,6 @@ class ControllerEntreprise extends Controller
             ]);
 
             $entreprise = Entreprise::create([
-                'id' => request('id'),
                 'name' => request('name'),
                 'no_rue' => request('no_rue'),
                 'ville' => request('ville'),

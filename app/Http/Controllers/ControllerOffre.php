@@ -22,7 +22,6 @@ class ControllerOffre extends Controller
 
 
         request()->validate([
-            'id' => ['required'],
             'name' => ['required'],
             'description' => ['required'],
             'start' => ['required'],
@@ -32,7 +31,6 @@ class ControllerOffre extends Controller
         ]);
 
         $offre = Offre::create([
-            'id' => request('id'),
             'name' => request('name'),
             'description' => request('description'),
             'start' => request('start'),
