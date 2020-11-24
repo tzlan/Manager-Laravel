@@ -50,7 +50,7 @@
 
 
             <li class="nav-item active">
-                <a class="nav-link" href=""> Etudiants Disponibles <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="lister_students"> Etudiants Disponibles <span class="sr-only">(current)</span></a>
             </li>
 
             <li class="nav-item active">
@@ -65,13 +65,48 @@
 
 </nav>
 <br><br><br><br>
+<div style="text-align: center;"><h1> Les entreprises partenaires </h1>
+    <br><br>
 
 
-        <div style="text-align: center;"><h1> Les entreprises partenaires</h1>
+{{--        <div style="text-align: center;"><h1> Les entreprises partenaires</h1>--}}
+
+
+{{--                @foreach($entreprises as $entreprise)--}}
+{{--                    <li>{{$entreprise->name}}   <button type="button" class="btn btn-warning">Modifier</button>  <button type="button" class="btn btn-danger">Supprimer</button></li>--}}
+{{--            @endforeach--}}
+
+{{--        </div>--}}
+
+
+<div class="container">
+    <table  class=" table table-striped">
+        <thead>
+        <tr>
+
+            <th scope="col">Id</th>
+            <th scope="col">Nom entreprise</th>
+            <th scope="col">Modifier </th>
+            <th scope="col">Supprimer</th>
+
+
+        </tr>
+        </thead>
+        <tbody>
+
+
+
 
                 @foreach($entreprises as $entreprise)
-                    <li>{{$entreprise->name}}</li>
+                     <tr>
+                        <td>{{$entreprise->id}}</td>
+                         <td>{{$entreprise->name}}</td>
+                         <td><a href="{{url('entreprises/modifier_entreprises/'.$entreprise->id)}}" type="button" class="btn btn-warning">Modifier</a></td>
+                         <td><a href="{{url('entreprises/lister_entreprises/'.$entreprise->id)}}" type="button" class="btn btn-danger">Supprimer</a></td>
+                     </tr>
                 @endforeach
 
-        </div>
 
+
+</div>
+</div>

@@ -36,7 +36,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark .bg-danger " style="background-color: #d41010;">
 
-    <a class="navbar-brand" href="accueil.blade.php">Université Paris Nanterre  </a>
+    <a class="navbar-brand" href="http://127.0.0.1:8000/">Université Paris Nanterre</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -44,55 +44,37 @@
         <ul class="navbar-nav">
 
             <li class="nav-item active">
-                <a class="nav-link" href="inscription_offre">Creer une offre<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index_students.blade.php">Valider la convention <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="lister_offres">Consulter les offres  <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="index_tuteurs.blade.php">Ajouter une remarque <span class="sr-only">(current)</span></a>
             </li>
 
 
 
             <li class="nav-item active">
-                <a class="nav-link" href="lister_students"> Etudiants Disponibles <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#"><strong>Connectez Vous</strong></a><span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link " href="lister_entreprises">Entreprises partenaires</a><span class="sr-only">(current)</span></a>
-            </li>
-
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Connection</a><span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link " href="inscription_entreprise">Inscription</a><span class="sr-only">(current)</span></a>
-            </li>
-
 
         </ul>
     </div>
 
 
 </nav>
-<br><br><br><br><br><br><br>
-<div class="container">
-
-    <div class="container">
-
-        <img src="images/logo_Paris_Nanterre_couleur_CMJN.png" >
-
-    </div>
-
-
-    <a class="carousel-control-prev" href="" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
 
 {{--Sert a faire heriter le comme include--}}
 @yield('content')
 
+<br><br><br><br><br><br><br><br><br><br>
+<div class="container">
 
+    <img src="images/logo_Paris_Nanterre_couleur_CMJN.png" >
+
+</div>
 {{--ICI FIN DE LA NAVBARRE--}}
 
 

@@ -44,4 +44,36 @@ class ControllerOffre extends Controller
         return view('prise_en_compte_offre_creation');
 
     }
+
+    public function destroy($id){
+
+        $offre=Offre::find($id);
+        $offre->delete();
+        return view('modification_prise_en_compte');
+    }
+
+
+
+    public function edit($id){
+
+            $offre= Offre::find($id);
+            $offres = Offre::all();
+
+        return view('offres/modifier_offres', compact('offre'));
+    }
+
+    public function update(Request $request, $id ){
+        $this->validate($request,['id'=>'required|min:1', ]);
+
+        $offre=Offre::find($id);
+        $offre->name=$request->name;
+        $offre->description=$request->description;
+        $offre->start=$request->start;
+        $offre->end=$request->end;
+        $offre->save();
+
+        return view('modification_prise_en_compte');
+    }
+
+
 }

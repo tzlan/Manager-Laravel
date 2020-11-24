@@ -78,6 +78,8 @@
         <th scope="col">Description</th>
         <th scope="col">Debut</th>
         <th scope="col">Fin</th>
+        <th scope="col">Modifier </th>
+        <th scope="col">Supprimer</th>
     </tr>
     </thead>
     <tbody>
@@ -90,6 +92,10 @@
             <td>{{$offre->description}}</td>
             <td>{{$offre->start}}</td>
             <td>{{$offre->end}}</td>
+
+
+               <td><a href="{{url('offres/modifier_offres/'.$offre->id)}}" type="button" class="btn btn-warning">Modifier</a></td>
+                <td><a href="{{url('offres/lister_offres/'.$offre->id)}}" type="button" class="btn btn-danger">Supprimer</a></td>
             </tr>
         @endforeach
 

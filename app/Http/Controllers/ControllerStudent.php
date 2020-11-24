@@ -49,6 +49,15 @@ class ControllerStudent extends Controller
 
     }
 
+    public function destroy($id){
+
+        $student=Student::find($id);
+        $student->delete();
+        return view('modification_prise_en_compte');
+    }
+
+
+
 
 
 

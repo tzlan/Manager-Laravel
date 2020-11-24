@@ -92,6 +92,9 @@
             <th scope="col">Classe</th>
             <th scope="col">Cv</th>
             <th scope="col">Statut</th>
+            <th scope="col">Modifier </th>
+
+            <th scope="col">Supprimer</th>
 
         </tr>
         </thead>
@@ -105,6 +108,9 @@
                 <td>{{$student->class}}</td>
                 <td>{{$student->cv}}</td>
                 <td>{{$student->status}}</td>
+                <td><button type="button" class="btn btn-warning">Modifier</button></td>
+
+                <td><a href="{{url('students/lister_students/'.$student->id)}}" type="button" class="btn btn-danger">Supprimer</a></td>
             </tr>
     @endforeach
 

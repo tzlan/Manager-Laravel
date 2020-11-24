@@ -49,6 +49,7 @@ class ControllerEntreprise extends Controller
 
 
 
+
     /**
      * Display a listing of the resource.
      *
@@ -99,7 +100,10 @@ class ControllerEntreprise extends Controller
      */
     public function edit($id)
     {
-        //
+        $entreprise= Entreprise::find($id);
+        $entreprises = Entreprise::all();
+
+        return view('entreprises/modifier_entreprises', compact('entreprise'));
     }
 
     /**
@@ -111,8 +115,20 @@ class ControllerEntreprise extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request,['id'=>'required|min:1', ]);
+
+        $entreprise=Entreprise::find($id);
+        $entreprise->name=$request->name;
+        $entreprise->no_rue=$request->no_rue;
+        $entreprise->ville=$request->ville;
+        $entreprise->code_postal=$request->code_postal;
+        $entreprise->save();
+
+        return view('modification_prise_en_compte');
     }
+
+
+
 
     /**
      * Remove the specified resource from storage.
@@ -120,8 +136,10 @@ class ControllerEntreprise extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
-        //
+    public function destroy($id){
+
+        $entreprise=Entreprise::find($id);
+        $entreprise->delete();
+        return view('modification_prise_en_compte');
     }
 }
