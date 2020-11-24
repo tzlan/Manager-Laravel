@@ -21,10 +21,10 @@ class CreateUsersTable extends Migration
             $table->string('email');
             $table->string('password');
 
-            $table->foreignID('entreprise_id')->constrained();
-            $table->foreignID('jury_id')->constrained();
-            $table->foreignID('tuteur_id')->constrained();
-            $table->foreignID('students_id')->constrained();
+            $table->foreignID('entreprise_id')->nullable()->constrained();
+            $table->foreignID('jury_id')->nullable()->constrained();
+            $table->foreignID('tuteur_id')->nullable()->constrained();
+            $table->foreignID('students_id')->nullable()->constrained();
             $table->rememberToken();
             $table->timestamps();
         });
