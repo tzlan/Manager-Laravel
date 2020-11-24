@@ -17,7 +17,7 @@ class ControllerConnexionUser extends Controller
     public function traitement(){
 
         request()->validate([
-            'email' => ['required','email'],
+            'mail' => ['required'],
             'password' => ['required'],
         ]);
 

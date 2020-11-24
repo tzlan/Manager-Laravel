@@ -55,7 +55,7 @@
         <small  class="form-text text-muted">
             Saisir votre mail
         </small>
-        <p> <input type="text" name="mail" placeholder="Ton petit mail" ></p>
+        <p> <input type="email" name="mail" placeholder="Ton petit mail" ></p>
         @if($errors->has('email'))
             <p>{{$errors->first('email')}}</p>
 
