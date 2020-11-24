@@ -9,6 +9,7 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
+    use \Illuminate\Auth\Authenticatable;
     use HasFactory, Notifiable;
 
     /**
@@ -17,11 +18,14 @@ class User extends Authenticatable
      * @var array
      */
 
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-    ];
+    protected $fillable = ['email', 'password'];
+
+
+    public function getAuthPassword()
+    {
+        return $this->password;
+    }
+
 
     /**
      * The attributes that should be hidden for arrays.

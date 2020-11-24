@@ -24,7 +24,10 @@
   <component name="ChangeListManager">
     <list default="true" id="11244e0a-5dd3-4679-b4a8-ceef9bf6ed6e" name="Default Changelist" comment="Vues">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerConnexionUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerConnexionUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/connexions/connexionUser.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/connexions/connexionUser.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/navbarre.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navbarre.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,6 +163,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -203,7 +207,8 @@
       <workItem from="1606117193356" duration="19504000" />
       <workItem from="1606204418581" duration="3858000" />
       <workItem from="1606218961255" duration="360000" />
-      <workItem from="1606221939228" duration="8884000" />
+      <workItem from="1606221939228" duration="9401000" />
+      <workItem from="1606234773308" duration="7348000" />
     </task>
     <servers />
   </component>
@@ -227,6 +232,10 @@
       <screen x="71" y="0" width="1465" height="864" />
     </state>
     <state x="535" y="234" key="#com.intellij.fileTypes.FileTypeChooser/71.0.1465.864@71.0.1465.864" timestamp="1605820743743" />
+    <state x="605" y="114" key="#com.intellij.ide.util.MemberChooser" timestamp="1606238291250">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="605" y="114" key="#com.intellij.ide.util.MemberChooser/62.0.1474.864@62.0.1474.864" timestamp="1606238291250" />
     <state x="429" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605727069248">
       <screen x="71" y="0" width="1465" height="864" />
     </state>
