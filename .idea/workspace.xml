@@ -23,9 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11244e0a-5dd3-4679-b4a8-ceef9bf6ed6e" name="Default Changelist" comment="Vues">
+      <change afterPath="$PROJECT_DIR$/resources/views/users/inscription_user.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerConnexionUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerConnexionUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/connexions/connexionUser.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/connexions/connexionUser.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +208,10 @@
       <workItem from="1606218961255" duration="360000" />
       <workItem from="1606221939228" duration="9401000" />
       <workItem from="1606234773308" duration="7505000" />
-      <workItem from="1606242905089" duration="1415000" />
+      <workItem from="1606242905089" duration="1658000" />
+      <workItem from="1606317348869" duration="363000" />
+      <workItem from="1606476452598" duration="72000" />
+      <workItem from="1606900682001" duration="6959000" />
     </task>
     <servers />
   </component>
@@ -243,18 +247,19 @@
       <screen x="71" y="0" width="1465" height="864" />
     </state>
     <state x="534" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/71.0.1465.864@71.0.1465.864" timestamp="1605702075789" />
-    <state x="528" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606204989711">
+    <state x="528" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606901923869">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="528" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/62.0.1474.864@62.0.1474.864" timestamp="1606204989711" />
+    <state x="528" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/62.0.1474.864@62.0.1474.864" timestamp="1606901923869" />
     <state x="534" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/71.0.1465.864@71.0.1465.864" timestamp="1605818576273" />
     <state x="584" y="187" key="FileChooserDialogImpl" timestamp="1605713131364">
       <screen x="71" y="0" width="1465" height="864" />
     </state>
     <state x="584" y="187" key="FileChooserDialogImpl/71.0.1465.864@71.0.1465.864" timestamp="1605713131364" />
-    <state x="633" y="356" key="NewPhpFileDialog" timestamp="1606228051615">
+    <state x="633" y="356" key="NewPhpFileDialog" timestamp="1606317451764">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
+    <state x="633" y="356" key="NewPhpFileDialog/62.0.1474.864/1920.0.1920.1050@62.0.1474.864" timestamp="1606317451764" />
     <state x="633" y="356" key="NewPhpFileDialog/62.0.1474.864@62.0.1474.864" timestamp="1606228051615" />
     <state x="639" y="356" key="NewPhpFileDialog/71.0.1465.864@71.0.1465.864" timestamp="1605820762082" />
     <state x="313" y="77" key="SettingsEditor" timestamp="1605727689711">

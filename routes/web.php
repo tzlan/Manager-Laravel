@@ -17,9 +17,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function (){
     return view('accueil');
 });
+//<-----------------------------USERS-------------------------------------->
 
+//Route inscription user
+Route::get('/inscription_user', [App\Http\Controllers\ControllerUser::class, 'formulaire']);
 
-//Exemple de route avec fonction
+//Route inscription user
+Route::post('/inscription_user', [App\Http\Controllers\ControllerUser::class, 'inscription_user']);
+
 
 
 //<------------------------------------------------------------------------------>
