@@ -37,9 +37,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 -->
 <br>
-<br>
-<br>
-<br>
+
 <br>
 <br>
 <div class="container p-3 my-3 border ">
@@ -113,11 +111,93 @@
 
 
 
+{{--<div class="container p-3 my-3 border ">--}}
+
+{{--<form action="/inscription_user" method="post">--}}
+{{--    {{csrf_field()}}--}}
+{{--    <h1>Formulaire d'inscription  </h1>--}}
+{{--    <br>--}}
+{{--    <br>--}}
+{{--    <br>--}}
+
+{{--    <div class="form-row">--}}
+{{--        <div class="form-group col-md-6">--}}
+{{--            <label for="inputEmail4">Identifiant utilisateur</label>--}}
+{{--            <input type="text" class="form-control" name="id" placeholder="id">--}}
+{{--            @if($errors->has('id'))--}}
+{{--                <p>{{$errors->first('id')}}</p>--}}
+{{--            @endif--}}
+{{--        </div>--}}
+
+{{--        <div class="form-group col-md-6">--}}
+{{--            <label for="inputPassword4">Mail</label>--}}
+{{--            <input type="email" class="form-control" name="mail" placeholder="mail">--}}
+{{--            @if($errors->has('mail'))--}}
+{{--                <p>{{$errors->first('mail')}}</p>--}}
+{{--            @endif--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--    <div class="form-row">--}}
+{{--        <div class="form-group col-md-6">--}}
+{{--            <label for="inputEmail4">Nom</label>--}}
+{{--            <input type="text" class="form-control" name="name" placeholder="Sebastien">--}}
+{{--            @if($errors->has('name'))--}}
+{{--                <p>{{$errors->first('name')}}</p>--}}
+{{--            @endif--}}
+
+{{--        </div>--}}
+{{--        <div class="form-group col-md-6">--}}
+{{--            <label for="inputPassword4">Prenom</label>--}}
+{{--            <input type="text" class="form-control" name="first_name" placeholder="Patrick">--}}
+{{--            @if($errors->has('first_name'))--}}
+{{--                <p>{{$errors->first('first_name')}}</p>--}}
+{{--            @endif--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
 
+{{--    <div class="form-group">--}}
+{{--        <label for="inputAddress">Mot de passe</label>--}}
+{{--        <input type="password" class="form-control" name="password" placeholder="password ">--}}
+{{--        @if($errors->has('password'))--}}
+{{--            <p>{{$errors->first('password')}}</p>--}}
+{{--        @endif--}}
+{{--    </div>--}}
+{{--    <div class="form-group">--}}
+{{--        <label for="inputAddress2">Telephone </label>--}}
+{{--        <input type="tel" class="form-control" name="tel" placeholder="01.40.30.56.59">--}}
+{{--        @if($errors->has('tel'))--}}
+{{--            <p>{{$errors->first('tel')}}</p>--}}
+{{--        @endif--}}
+{{--    </div>--}}
+{{--    <div class="form-row">--}}
+{{--        <div class="form-group col-md-6">--}}
+{{--            <label for="inputEmail4">Identifiant Student</label>--}}
+{{--            <input type="tel" class="form-control" name="students_id" placeholder="258ET">--}}
+
+{{--        </div>--}}
+{{--        <div class="form-group col-md-6">--}}
+{{--            <label for="inputPassword4">Identifiant entreprise</label>--}}
+{{--            <input type="text" class="form-control" name="entreprise_id" placeholder="815EN">--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--    <div class="form-row">--}}
+{{--        <div class="form-group col-md-6">--}}
+{{--            <label for="inputEmail4">Identifiant jury</label>--}}
+{{--            <input type="text" class="form-control" name="jury_id" placeholder="654JU">--}}
+
+{{--        </div>--}}
+{{--        <div class="form-group col-md-6">--}}
+{{--            <label for="inputPassword4">Identifiant Tuteur</label>--}}
+{{--            <input type="text" class="form-control" name="tuteur_id" placeholder="456TU">--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
 
+{{--   <center> <input type="submit" class="btn btn-success"></input></center>--}}
+{{--</form>--}}
 
+{{--</div>--}}
 
 
 

@@ -41,7 +41,7 @@ class ControllerEntreprise extends Controller
 
             ]);
 
-            return view('prise_en_compte_inscription');
+             return view('prise_en_compte_inscription');
 
     }
 

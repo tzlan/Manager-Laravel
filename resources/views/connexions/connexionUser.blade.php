@@ -42,7 +42,7 @@
 <br>
 <br>
 <br>
-<center>
+<div style="text-align: center;">
 <div class="container p-3 my-3 border">
     <h1>Formulaire de connexion </h1>
     <br>
@@ -74,7 +74,7 @@
     </form>
 </div>
 
-</center>
+</div>
 
 @endsection
 

@@ -26,7 +26,9 @@ Route::get('/inscription_user', [App\Http\Controllers\ControllerUser::class, 'fo
 //Route inscription user
 Route::post('/inscription_user', [App\Http\Controllers\ControllerUser::class, 'inscription_user']);
 
-
+Route::get('/index_users.blade.php', function (){
+    return view('index_users');
+});
 
 //<------------------------------------------------------------------------------>
 //Routes generales

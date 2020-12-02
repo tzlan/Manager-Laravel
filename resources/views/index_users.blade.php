@@ -33,7 +33,8 @@
 
 
 
-<nav class="navbar navbar-expand-lg navbar-dark .bg-danger " style="background-color: #de1818;">
+
+<nav class="navbar navbar-expand-lg navbar-dark .bg-danger " style="background-color: #d41010;">
 
     <a class="navbar-brand" href="http://127.0.0.1:8000/">Université Paris Nanterre</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,31 +43,23 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
 
-                <li class="nav-item active">
-                    <a class="nav-link" href="index_students.blade.php">Etudiants <span class="sr-only">(current)</span></a>
-                </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="inscription_user">Inserer Utilisateurs <span class="sr-only">(current)</span></a>
+            </li>
 
-                <li class="nav-item active">
-                    <a class="nav-link" href="index_entreprise.blade.php">Entreprises <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="index_tuteurs.blade.php">Tuteurs <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="index_jury.blade.php">Jury <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="index_users.blade.php">Utilisateurs <span class="sr-only">(current)</span></a>
-                </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="lister_user">Lister utilisateurs <span class="sr-only">(current)</span></a>
+            </li>
 
 
 
-                <li class="nav-item active">
-                    <a class="nav-link" href="connexionUser"><strong>Connectez Vous</strong></a><span class="sr-only">(current)</span></a>
-                </li>
 
-            </ul>
-        </div>
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><strong>Connectez Vous</strong></a><span class="sr-only">(current)</span></a>
+            </li>
+
+        </ul>
+    </div>
 
 
 </nav>
@@ -74,7 +67,12 @@
 {{--Sert a faire heriter le comme include--}}
 @yield('content')
 
+<br><br><br><br><br><br><br><br><br><br>
+<div class="container">
 
+    <img src="images/logo_Paris_Nanterre_couleur_CMJN.png" >
+
+</div>
 {{--ICI FIN DE LA NAVBARRE--}}
 
 

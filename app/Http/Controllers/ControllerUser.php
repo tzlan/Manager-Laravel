@@ -19,7 +19,7 @@ class ControllerUser extends Controller
         return view('users/inscription_user');
     }
     public function inscription_user(){
-       // dd(request());
+      //  dd(request());
 
         request()->validate([
             'id' => ['required'],
@@ -53,8 +53,8 @@ class ControllerUser extends Controller
 
         ]);
 
+        return view('prise_en_compte_inscription');
 
-        redirect()->route('prise_en_compte_inscription');
 
     }
 

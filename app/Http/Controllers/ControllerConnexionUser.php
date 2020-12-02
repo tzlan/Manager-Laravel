@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Hash;
 
 
 class ControllerConnexionUser extends Controller
@@ -20,13 +20,12 @@ class ControllerConnexionUser extends Controller
             'mail' => ['required'],
             'password' => ['required'],
         ]);
-
-       $resultat= auth()->attempt([
+//        dd(request());
+        $resultat= auth()->attempt([
 
             'email'=> request('email'),
-            'password'=> request('password'),
+            'password'=> Hash::make(request('password')),
         ]);
-
        var_dump($resultat);
         return'traitement de la connexion';
     }
