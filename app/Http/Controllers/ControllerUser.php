@@ -1,17 +1,25 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Http;
 
 class ControllerUser extends Controller
 {
+    public function lister_users(){
+        //Fonction qui liste
+        $users = User::all();
+        return view('users/lister_user',[
+            'users'=> $users,
+        ]);
+    }
     public function formulaire(){
         return view('users/inscription_user');
     }
     public function inscription_user(){
-
+       // dd(request());
 
         request()->validate([
             'id' => ['required'],
@@ -31,10 +39,12 @@ class ControllerUser extends Controller
         $user = User::create([
             'id' => request('id'),
             'name' => request('name'),
-            'tel' => request('first_name'),
-            'first_name' => request('ville'),
+            'tel' => request('tel'),
+            'first_name' => request('first_name'),
+
             'email' => request('email'),
-            'password' => request('password'),
+            'password' => bcrypt(request('password')),
+
             'entreprise_id' => request('entreprise_id'),
             'jury_id' => request('jury_id'),
             'tuteur_id' => request('tuteur_id'),
@@ -43,7 +53,8 @@ class ControllerUser extends Controller
 
         ]);
 
-        return view('prise_en_compte_inscription');
+
+        redirect()->route('prise_en_compte_inscription');
 
     }
 

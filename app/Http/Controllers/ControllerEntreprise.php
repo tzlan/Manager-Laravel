@@ -11,7 +11,8 @@ class ControllerEntreprise extends Controller
 {
 
     public function lister_entreprises(){
-        $entreprises = Entreprise::all();//Fonction qui liste
+        //Fonction qui liste
+        $entreprises = Entreprise::all();
         return view('entreprises/lister_entreprises',[
             'entreprises'=> $entreprises,
         ]);

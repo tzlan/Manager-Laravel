@@ -42,13 +42,15 @@
 <br>
 <br>
 <br>
-<div class="container p-3 my-3 border">
+<div class="container p-3 my-3 border ">
+
     <h1>Formulaire d'inscription  </h1>
     <br>
     <br>
     <br>
 
     <form action="/inscription_user" method="post">
+
         {{csrf_field()}}
 
 
@@ -90,27 +92,16 @@
 
         <small  class="form-text text-muted">ID entreprise</small>
         <p>   <input type="text" name="entreprise_id" placeholder="Id entreprise"></p>
-        @if($errors->has('entreprise_id'))
-            <p>{{$errors->first('entreprise_id')}}</p>
-        @endif
 
         <small  class="form-text text-muted">ID jury</small>
         <p>   <input type="text" name="jury_id" placeholder="Id jury"></p>
-        @if($errors->has('jury_id'))
-            <p>{{$errors->first('jury_id')}}</p>
-        @endif
 
         <small  class="form-text text-muted">Id tuteur</small>
         <p>   <input type="text" name="tuteur_id" placeholder="Id tuteur"></p>
-        @if($errors->has('tuteur_id'))
-            <p>{{$errors->first('tuteur_id')}}</p>
-        @endif
 
         <small  class="form-text text-muted">Id etudiant</small>
         <p>   <input type="text" name="students_id" placeholder="Votre id etudiant"></p>
-        @if($errors->has('students_id'))
-            <p>{{$errors->first('students_id')}}</p>
-        @endif
+
 
 
         <input type="submit" value="Inscription" >
@@ -136,4 +127,6 @@
 
 
 @endsection
+
+
 

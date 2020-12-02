@@ -18,10 +18,11 @@ Route::get('/', function (){
     return view('accueil');
 });
 //<-----------------------------USERS-------------------------------------->
+//Route lister les users
+Route::get('/lister_user', [App\Http\Controllers\ControllerUser::class, 'lister_users']);
 
 //Route inscription user
 Route::get('/inscription_user', [App\Http\Controllers\ControllerUser::class, 'formulaire']);
-
 //Route inscription user
 Route::post('/inscription_user', [App\Http\Controllers\ControllerUser::class, 'inscription_user']);
 
@@ -35,6 +36,7 @@ Route::get('/navbarre', function (){
 Route::get('/laravel', function () {
     return view('welcome');
 });
+
 //<-----------------------------Connexions-------------------------------------->
 Route::post('/connexionUser', [App\Http\Controllers\ControllerConnexionUser::class, 'traitement']);
 Route::get('/connexionUser', [App\Http\Controllers\ControllerConnexionUser::class, 'formulaire']);
