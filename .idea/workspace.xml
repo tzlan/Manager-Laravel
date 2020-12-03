@@ -25,12 +25,6 @@
     <list default="true" id="11244e0a-5dd3-4679-b4a8-ceef9bf6ed6e" name="Default Changelist" comment="Vues">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerConnexionUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerConnexionUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerEntreprise.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerEntreprise.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/connexions/connexionUser.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/connexions/connexionUser.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/navbarre.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navbarre.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/users/inscription_user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/inscription_user.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +161,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JSON" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -215,7 +209,9 @@
       <workItem from="1606242905089" duration="1658000" />
       <workItem from="1606317348869" duration="363000" />
       <workItem from="1606476452598" duration="72000" />
-      <workItem from="1606900682001" duration="27284000" />
+      <workItem from="1606900682001" duration="28437000" />
+      <workItem from="1606986706588" duration="999000" />
+      <workItem from="1607022248080" duration="236000" />
     </task>
     <servers />
   </component>
@@ -266,9 +262,10 @@
     <state x="633" y="356" key="NewPhpFileDialog/62.0.1474.864/1920.0.1920.1050@62.0.1474.864" timestamp="1606317451764" />
     <state x="633" y="356" key="NewPhpFileDialog/62.0.1474.864@62.0.1474.864" timestamp="1606924138012" />
     <state x="639" y="356" key="NewPhpFileDialog/71.0.1465.864@71.0.1465.864" timestamp="1605820762082" />
-    <state x="313" y="77" key="SettingsEditor" timestamp="1605727689711">
-      <screen x="71" y="0" width="1465" height="864" />
+    <state x="305" y="77" key="SettingsEditor" timestamp="1606950097561">
+      <screen x="62" y="0" width="1474" height="864" />
     </state>
+    <state x="305" y="77" key="SettingsEditor/62.0.1474.864@62.0.1474.864" timestamp="1606950097561" />
     <state x="313" y="77" key="SettingsEditor/71.0.1465.864@71.0.1465.864" timestamp="1605727689711" />
     <state x="392" y="165" key="Vcs.Push.Dialog.v2" timestamp="1605864961821">
       <screen x="62" y="0" width="1474" height="864" />
