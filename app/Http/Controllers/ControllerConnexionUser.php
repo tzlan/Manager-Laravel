@@ -16,7 +16,7 @@ class ControllerConnexionUser extends Controller
     }
     public function traitement (Request $request)
     {
-        dd($request-email);
+        //dd($request->all());
         $user = User::whereEmail($request->post('email'));
         dd(Hash::check($request->post('password'), $user->password));
     }
