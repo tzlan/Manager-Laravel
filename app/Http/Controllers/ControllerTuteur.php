@@ -17,7 +17,7 @@ class ControllerTuteur extends Controller
         public function formulaire(){
         return view('jury/inscription_jury');
     }
-    public function inscription_jury(){
+    public function inscription_tuteur(){
 
 
         request()->validate([
@@ -29,7 +29,7 @@ class ControllerTuteur extends Controller
 
         ]);
 
-        $jury = Jury::create([
+        $jury = Tuteur::create([
             'id' => request('id'),
             'name' => request('name'),
             'first_name' => request('first_name'),
