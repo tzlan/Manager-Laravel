@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Jury extends Model
 {
+
+    protected $fillable=['id','name','first_name','date_n','status'];
     use HasFactory;
 }

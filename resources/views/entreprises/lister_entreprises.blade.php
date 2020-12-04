@@ -86,8 +86,8 @@
 
             <th scope="col">Id</th>
             <th scope="col">Nom entreprise</th>
-            <th scope="col">Modifier </th>
-            <th scope="col">Supprimer</th>
+{{--            <th scope="col">Modifier </th>--}}
+{{--            <th scope="col">Supprimer</th>--}}
 
 
         </tr>
@@ -101,8 +101,8 @@
                      <tr>
                         <td>{{$entreprise->id}}</td>
                          <td>{{$entreprise->name}}</td>
-                         <td><a href="{{url('entreprises/modifier_entreprises/'.$entreprise->id)}}" type="button" class="btn btn-warning">Modifier</a></td>
-                         <td><a href="{{url('entreprises/lister_entreprises/'.$entreprise->id)}}" type="button" class="btn btn-danger">Supprimer</a></td>
+{{--                         <td><a href="{{url('entreprises/modifier_entreprises/'.$entreprise->id)}}" type="button" class="btn btn-warning">Modifier</a></td>--}}
+{{--                         <td><a href="{{url('entreprises/lister_entreprises/'.$entreprise->id)}}" type="button" class="btn btn-danger">Supprimer</a></td>--}}
                      </tr>
                 @endforeach
 

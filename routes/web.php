@@ -93,8 +93,6 @@ Route::get('/index_students.blade.php', function (){
 });
 //Route inscription offre
 Route::get('/inscription_offre', [App\Http\Controllers\ControllerOffre::class, 'formulaire']);
-
-//Route inscription
 Route::post('/inscription_offre', [App\Http\Controllers\ControllerOffre::class, 'inscription_offre']);
 
 //Route lister offres
@@ -114,7 +112,18 @@ Route::get('offres/lister_offres/{id}',[App\Http\Controllers\ControllerOffre::cl
 Route::get('/index_tuteurs.blade.php', function (){
     return view('index_tuteurs');
 });
+
+//Route lister offres
+Route::get('/lister_tuteurs', [App\Http\Controllers\ControllerTuteur::class, 'lister_tuteurs']);
+
 //<-----------------------------JURY-------------------------------------->
 Route::get('/index_jury.blade.php', function (){
     return view('index_jury');
 });
+//  Inscription Jury
+Route::get('/inscription_jury', [App\Http\Controllers\ControllerJury::class, 'formulaire']);
+Route::post('/inscription_jury', [App\Http\Controllers\ControllerJury::class, 'inscription_jury']);
+
+//Lister Jury
+Route::get('/lister_jury', [App\Http\Controllers\ControllerJury::class, 'lister_jury']);
+
