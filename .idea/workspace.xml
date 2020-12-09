@@ -23,8 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11244e0a-5dd3-4679-b4a8-ceef9bf6ed6e" name="Default Changelist" comment="Vues">
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerTuteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerTuteur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerJury.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerJury.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,8 +159,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -215,6 +224,8 @@
       <workItem from="1607027319713" duration="1614000" />
       <workItem from="1607032450067" duration="36000" />
       <workItem from="1607032496328" duration="11897000" />
+      <workItem from="1607550710745" duration="339000" />
+      <workItem from="1607551054192" duration="2829000" />
     </task>
     <servers />
   </component>
@@ -233,82 +244,8 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="529" y="234" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607033307598">
-      <screen x="62" y="0" width="1474" height="864" />
-    </state>
-    <state x="529" y="234" key="#com.intellij.fileTypes.FileTypeChooser/62.0.1474.864/-1680.34.1680.1020/-42.1084.2082.1080@62.0.1474.864" timestamp="1607033307598" />
-    <state x="535" y="234" key="#com.intellij.fileTypes.FileTypeChooser/71.0.1465.864@71.0.1465.864" timestamp="1605820743743" />
-    <state x="605" y="114" key="#com.intellij.ide.util.MemberChooser" timestamp="1606238291250">
-      <screen x="62" y="0" width="1474" height="864" />
-    </state>
-    <state x="605" y="114" key="#com.intellij.ide.util.MemberChooser/62.0.1474.864@62.0.1474.864" timestamp="1606238291250" />
-    <state x="429" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605727069248">
-      <screen x="71" y="0" width="1465" height="864" />
-    </state>
-    <state x="429" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/71.0.1465.864@71.0.1465.864" timestamp="1605727069248" />
-    <state x="534" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605702075789">
-      <screen x="71" y="0" width="1465" height="864" />
-    </state>
-    <state x="534" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/71.0.1465.864@71.0.1465.864" timestamp="1605702075789" />
-    <state x="528" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607041954965">
-      <screen x="62" y="0" width="1474" height="864" />
-    </state>
-    <state x="528" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/62.0.1474.864/-1680.34.1680.1020/-42.1084.2082.1080@62.0.1474.864" timestamp="1607034599291" />
-    <state x="528" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/62.0.1474.864/-1680.34.1680.1020@62.0.1474.864" timestamp="1607041954965" />
-    <state x="528" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/62.0.1474.864@62.0.1474.864" timestamp="1606916947951" />
-    <state x="534" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/71.0.1465.864@71.0.1465.864" timestamp="1605818576273" />
-    <state x="584" y="187" key="FileChooserDialogImpl" timestamp="1605713131364">
-      <screen x="71" y="0" width="1465" height="864" />
-    </state>
-    <state x="584" y="187" key="FileChooserDialogImpl/71.0.1465.864@71.0.1465.864" timestamp="1605713131364" />
-    <state x="633" y="356" key="NewPhpFileDialog" timestamp="1607034919974">
-      <screen x="62" y="0" width="1474" height="864" />
-    </state>
-    <state x="633" y="356" key="NewPhpFileDialog/62.0.1474.864/-1680.34.1680.1020/-42.1084.2082.1080@62.0.1474.864" timestamp="1607034919974" />
-    <state x="633" y="356" key="NewPhpFileDialog/62.0.1474.864/1920.0.1920.1050@62.0.1474.864" timestamp="1606317451764" />
-    <state x="633" y="356" key="NewPhpFileDialog/62.0.1474.864@62.0.1474.864" timestamp="1606924138012" />
-    <state x="639" y="356" key="NewPhpFileDialog/71.0.1465.864@71.0.1465.864" timestamp="1605820762082" />
-    <state x="305" y="77" key="SettingsEditor" timestamp="1607042425330">
-      <screen x="62" y="0" width="1474" height="864" />
-    </state>
-    <state x="305" y="77" key="SettingsEditor/62.0.1474.864/-1680.34.1680.1020@62.0.1474.864" timestamp="1607042425330" />
-    <state x="305" y="77" key="SettingsEditor/62.0.1474.864@62.0.1474.864" timestamp="1606950097561" />
-    <state x="313" y="77" key="SettingsEditor/71.0.1465.864@71.0.1465.864" timestamp="1605727689711" />
-    <state x="392" y="165" key="Vcs.Push.Dialog.v2" timestamp="1605864961821">
-      <screen x="62" y="0" width="1474" height="864" />
-    </state>
-    <state x="392" y="165" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1605864961821" />
-    <state x="-1247" y="159" width="1233" height="851" key="dock-window-1" timestamp="1607032974338">
-      <screen x="-1680" y="34" width="1680" height="1020" />
-    </state>
-    <state x="-1247" y="159" width="1233" height="851" key="dock-window-1/62.0.1474.864/-1680.34.1680.1020/-42.1084.2082.1080@62.0.1474.864" timestamp="1607032974338" />
-    <state x="-1548" y="26" width="1106" height="851" maximized="true" key="dock-window-2" timestamp="1607037935515">
-      <screen x="-1680" y="34" width="1680" height="1020" />
-    </state>
-    <state x="-1548" y="26" width="1106" height="851" maximized="true" key="dock-window-2/62.0.1474.864/-1680.34.1680.1020/-42.1084.2082.1080@62.0.1474.864" timestamp="1607037935515" />
-    <state x="-1180" y="34" width="1106" height="851" maximized="true" key="dock-window-3" timestamp="1607041191262">
-      <screen x="-1680" y="34" width="1680" height="1020" />
-    </state>
-    <state x="-1180" y="34" width="1106" height="851" key="dock-window-3/62.0.1474.864/-1680.34.1680.1020/-42.1084.2082.1080@62.0.1474.864" timestamp="1607040846393" />
-    <state x="-1180" y="34" width="1106" height="851" maximized="true" key="dock-window-3/62.0.1474.864/-1680.34.1680.1020@62.0.1474.864" timestamp="1607041191262" />
-    <state x="-1371" y="18" width="1106" height="851" maximized="true" key="dock-window-4" timestamp="1607046326375">
-      <screen x="-1680" y="34" width="1680" height="1020" />
-    </state>
-    <state x="-1371" y="18" width="1106" height="851" maximized="true" key="dock-window-4/62.0.1474.864/-1680.34.1680.1020@62.0.1474.864" timestamp="1607046326375" />
-    <state x="-1680" y="156" width="1106" height="851" maximized="true" key="dock-window-5" timestamp="1607045631698">
-      <screen x="-1680" y="34" width="1680" height="1020" />
-    </state>
-    <state x="-1680" y="156" width="1106" height="851" maximized="true" key="dock-window-5/62.0.1474.864/-1680.34.1680.1020@62.0.1474.864" timestamp="1607045631698" />
-    <state x="454" y="197" key="run.anything.popup" timestamp="1607041480754">
-      <screen x="62" y="0" width="1474" height="864" />
-    </state>
-    <state x="454" y="197" key="run.anything.popup/62.0.1474.864/-1680.34.1680.1020@62.0.1474.864" timestamp="1607041480754" />
-    <state x="454" y="197" key="run.anything.popup/62.0.1474.864@62.0.1474.864" timestamp="1606135267234" />
-    <state x="461" y="197" key="run.anything.popup/71.0.1465.864@71.0.1465.864" timestamp="1605820586809" />
-    <state x="462" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1606207386507">
-      <screen x="62" y="0" width="1474" height="864" />
-    </state>
-    <state x="462" y="181" width="672" height="678" key="search.everywhere.popup/62.0.1474.864@62.0.1474.864" timestamp="1606207386507" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Vues" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vues" />
   </component>
 </project>
