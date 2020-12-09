@@ -42,6 +42,7 @@
 <div class="container p-3 my-3 border ">
 
     <h1>Formulaire d'inscription  </h1>
+    <p>Faites attention</p>
     <br>
     <br>
     <br>

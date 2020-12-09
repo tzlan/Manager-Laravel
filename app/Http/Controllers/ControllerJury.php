@@ -6,7 +6,7 @@ use App\Models\Jury;
 
 class ControllerJury extends Controller
 {
-//Test
+
 
     public function lister_jury(){
         //Fonction qui liste
