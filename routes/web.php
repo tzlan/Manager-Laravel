@@ -127,3 +127,6 @@ Route::post('/inscription_jury', [App\Http\Controllers\ControllerJury::class, 'i
 //Lister Jury
 Route::get('/lister_jury', [App\Http\Controllers\ControllerJury::class, 'lister_jury']);
 
+//<-----------------------------------CONNEXIONS-------------------------------------------->
+
+Route::get('/redirection_entreprise_connecte', [App\Http\Controllers\ControllerConnexionUser::class, 'accueil']);
