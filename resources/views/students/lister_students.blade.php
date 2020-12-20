@@ -108,8 +108,9 @@
                 <td>{{$student->class}}</td>
                 <td>{{$student->cv}}</td>
                 <td>{{$student->status}}</td>
-                <td><button type="button" class="btn btn-warning">Modifier</button></td>
 
+
+                <td><a href="{{url('students/modifier_students/'.$student->id)}}" type="button" class="btn btn-warning">Modifier</a></td>
                 <td><a href="{{url('students/lister_students/'.$student->id)}}" type="button" class="btn btn-danger">Supprimer</a></td>
             </tr>
     @endforeach

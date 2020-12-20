@@ -37,14 +37,24 @@ class ControllerConnexionUser extends Controller
         var_dump($resultat);
 
         if ($resultat){
+
             return redirect('redirection_entreprise_connecte');
         }
+
          return back()->withInput()->withErrors([
 
              'email'=>'Votre email est incorrect'
          ]);
 
     }
+
+    public function deconnexion(){
+
+        auth()->logout();
+        return redirect('/');
+
+    }
+
 
 
 }

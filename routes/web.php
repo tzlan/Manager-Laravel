@@ -84,6 +84,10 @@ Route::get('/lister_students', [App\Http\Controllers\ControllerStudent::class, '
 //Supprimer STUDENTS
 Route::get('students/lister_students/{id}',[App\Http\Controllers\ControllerStudent::class, 'destroy'])->name('lister_students');
 
+//Modifier students
+Route::get('students/modifier_students/{id}',[App\Http\Controllers\ControllerStudent::class, 'edit'])->name('modifier_student');
+Route::post('students/modifier_students/{id}',[App\Http\Controllers\ControllerStudent::class, 'update'])->name('update_student');
+
 
 
 //<-----------------------------OFFRES-------------------------------------->
@@ -130,3 +134,4 @@ Route::get('/lister_jury', [App\Http\Controllers\ControllerJury::class, 'lister_
 //<-----------------------------------CONNEXIONS-------------------------------------------->
 
 Route::get('/redirection_entreprise_connecte', [App\Http\Controllers\ControllerConnexionUser::class, 'accueil']);
+Route::get('/deconnexion', [App\Http\Controllers\ControllerConnexionUser::class, 'deconnexion']);

@@ -26,6 +26,10 @@ class User extends Authenticatable
         return $this->password;
     }
 
+    public function whatIsUser(){
+        $res=0;
+
+    }
 
     /**
      * The attributes that should be hidden for arrays.

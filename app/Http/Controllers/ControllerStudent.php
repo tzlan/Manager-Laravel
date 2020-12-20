@@ -57,6 +57,31 @@ class ControllerStudent extends Controller
     }
 
 
+    public function edit($id){
+
+        $student= Student::find($id);
+        $students = Student::all();
+
+        return view('students/modifier_students', compact('student'));
+    }
+
+    public function update(Request $request, $id ){
+        $this->validate($request,['id'=>'required|min:1', ]);
+
+        $student=Student::find($id);
+
+        $student->name=$request->name;
+        $student->first_name=$request->first_name;
+        $student->class=$request->class;
+        $student->cv=$request->cv;
+        $student->motivation=$request->motivation;
+        $student->status=$request->status;
+
+
+        $student->save();
+
+        return view('modification_prise_en_compte');
+    }
 
 
 
