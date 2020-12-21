@@ -36,10 +36,22 @@ class ControllerConnexionUser extends Controller
         $resultat = Auth::attempt($request->only('email', 'password'));
         var_dump($resultat);
 
-        if ($resultat){
+        $user = Auth::user();
 
-            return redirect('redirection_entreprise_connecte');
+        if ($user->entreprise_id){
+         return redirect('redirection_entreprise_connecte');
         }
+        if($user->jury_id){
+            return redirect('redirection_jurys_connecte');
+        }
+        if($user->tuteur_id){
+            return redirect('redirection_tuteurs_connecte');
+        }
+        if($user->students_id){
+            return redirect('redirection_students_connecte');
+        }
+
+
 
          return back()->withInput()->withErrors([
 

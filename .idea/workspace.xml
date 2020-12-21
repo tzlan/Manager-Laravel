@@ -23,25 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11244e0a-5dd3-4679-b4a8-ceef9bf6ed6e" name="Default Changelist" comment="Footer + update student + differentes pages de redirections">
-      <change afterPath="$PROJECT_DIR$/resources/views/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/redirection_jurys_connecte.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/redirection_students_connecte.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/redirection_tuteurs_connecte.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerConnexionUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerConnexionUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerStudent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerUser.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2021_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_10_12_000000_create_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/accueil.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/accueil.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/connexions/connexionUser.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/connexions/connexionUser.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index_entreprise.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index_entreprise.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index_students.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index_students.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/offres/lister_offres.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/offres/lister_offres.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/prise_en_compte_offre_creation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/prise_en_compte_offre_creation.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/redirection_entreprise_connecte.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/redirection_entreprise_connecte.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/students/lister_students.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students/lister_students.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/students/modifier_students.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students/modifier_students.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,6 +235,12 @@
       <workItem from="1608240764896" duration="3480000" />
       <workItem from="1608400664105" duration="18066000" />
       <workItem from="1608460549015" duration="1588000" />
+      <workItem from="1608462236071" duration="103000" />
+      <workItem from="1608465663642" duration="2048000" />
+      <workItem from="1608481312053" duration="1010000" />
+      <workItem from="1608484571015" duration="6115000" />
+      <workItem from="1608498927400" duration="2430000" />
+      <workItem from="1608589861682" duration="1709000" />
     </task>
     <task id="LOCAL-00001" summary="Vues">
       <created>1607553953194</created>
@@ -269,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608156322874</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=" &quot;Footer + update student + differentes pages de redirections&quot;">
+      <created>1608462293884</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608462293884</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,6 +293,7 @@
     <MESSAGE value="add redirection_entreprise_connecte.blade.php" />
     <MESSAGE value="Connexion User avec le message est connecté" />
     <MESSAGE value="Footer + update student + differentes pages de redirections" />
-    <option name="LAST_COMMIT_MESSAGE" value="Footer + update student + differentes pages de redirections" />
+    <MESSAGE value=" &quot;Footer + update student + differentes pages de redirections&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value=" &quot;Footer + update student + differentes pages de redirections&quot;" />
   </component>
 </project>

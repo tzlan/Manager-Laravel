@@ -19,15 +19,17 @@ class ControllerUser extends Controller
         return view('users/inscription_user');
     }
     public function inscription_user(){
-      //  dd(request());
+       //dd(request());
 
         request()->validate([
             'id' => ['required'],
             'name' => ['required'],
             'tel' => ['required'],
             'first_name' => ['required'],
+
             'email' => ['required'],
             'password' => ['required'],
+
             'entreprise_id' => ['required_without_all:jury_id,tuteur_id,student_id'],
             'jury_id' => ['required_without_all:entreprise_id,tuteur_id,student_id'],
             'tuteur_id' => ['required_without_all:jury_id,entreprise_id,student_id'],

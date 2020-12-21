@@ -24,7 +24,7 @@
 
 
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
     <footer class="bg-primary text-white text-center text-lg-start">
@@ -34,13 +34,13 @@
             <div class="row">
                 <!--Grid column-->
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Unisersité Paris X Nanterre</h5>
+                    <h5 class="text-uppercase">Université Paris X Nanterre</h5>
 
                     <p>
-                        Université Paris Nanterre
-                        200 avenue de la République
-                        92001 Nanterre Cedex
-                        01 40 97 72 00
+                        Université Paris Nanterre<br>
+                        200 avenue de la République<br>
+                        92001 Nanterre Cedex<br>
+                        01 40 97 72 00<br>
                         www.parisnanterre.fr
                     </p>
                 </div>
