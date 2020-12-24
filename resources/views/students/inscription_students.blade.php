@@ -59,11 +59,9 @@
 
         @endif
 
-
         <p>   <input type="text" name="name" placeholder="Nom de l'étudiant"></p>
         @if($errors->has('name'))
             <p>{{$errors->first('name')}}</p>
-
         @endif
 
         <p>   <input type="text" name="first_name" placeholder="Prenom"></p>

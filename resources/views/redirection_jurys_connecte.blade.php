@@ -56,13 +56,6 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="index_tuteurs.blade.php">Ajouter une remarque <span class="sr-only">(current)</span></a>
                         </li>
-
-
-
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#"><strong>Connectez Vous</strong></a><span class="sr-only">(current)</span></a>
-                        </li>
-
                     </ul>
                 </div>
                 <a class="nav-link" href="/deconnexion">Deconnexion  <span class="sr-only">(current)</span></a>
@@ -87,10 +80,10 @@
 <br><br><br><br><br><br>
 
 
-<div style="text-align: center;"> <h1>Bienvenu sur votre espace 🤙🏻 </h1></div>
+<div style="text-align: center;"> <h1>Bienvenu sur votre espace 🌐</h1></div>
 
 
-<div style="text-align: center;"><p>Vous etes desormais connecté avec votre compte entreprise</p></div>
+<div style="text-align: center;"><p>Vous etes desormais connecté avec votre compte jury 💳</p></div>
 
 
 </body>

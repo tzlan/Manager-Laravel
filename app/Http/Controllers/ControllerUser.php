@@ -30,9 +30,9 @@ class ControllerUser extends Controller
             'email' => ['required'],
             'password' => ['required'],
 
-            'entreprise_id' => ['required_without_all:jury_id,tuteur_id,student_id'],
-            'jury_id' => ['required_without_all:entreprise_id,tuteur_id,student_id'],
-            'tuteur_id' => ['required_without_all:jury_id,entreprise_id,student_id'],
+            'entreprise_id' => ['required_without_all:jury_id,tuteur_id,students_id'],
+            'jury_id' => ['required_without_all:entreprise_id,tuteur_id,students_id'],
+            'tuteur_id' => ['required_without_all:jury_id,entreprise_id,students_id'],
             'students_id' => ['required_without_all:jury_id,tuteur_id,entreprise_id'],
 
 

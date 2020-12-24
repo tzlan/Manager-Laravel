@@ -25,11 +25,29 @@
     <list default="true" id="11244e0a-5dd3-4679-b4a8-ceef9bf6ed6e" name="Default Changelist" comment="Footer + update student + differentes pages de redirections">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerConnexionUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerConnexionUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerEntreprise.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerEntreprise.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerJury.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerJury.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerOffre.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerOffre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerStudent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerTuteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerTuteur.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/accueil.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/accueil.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Jury.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Jury.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/connexions/connexionUser.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/connexions/connexionUser.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index_entreprise.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index_entreprise.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index_jury.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index_jury.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index_students.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index_students.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/students/lister_students.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students/lister_students.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index_tuteurs.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index_tuteurs.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/jury/inscription_jury.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/jury/inscription_jury.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/navbarre.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navbarre.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/redirection_jurys_connecte.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/redirection_jurys_connecte.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/redirection_students_connecte.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/redirection_students_connecte.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/redirection_tuteurs_connecte.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/redirection_tuteurs_connecte.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/students/inscription_students.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students/inscription_students.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/tuteurs/inscription_tuteurs.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tuteurs/inscription_tuteurs.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/tuteurs/lister_tuteurs.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tuteurs/lister_tuteurs.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +182,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/connexions" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -178,6 +196,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\talza\Desktop\Unniv\WEB\NewInstall\gestion2\resources\views\connexions" />
       <recent name="C:\Users\talza\Desktop\Unniv\WEB\NewInstall\gestion2\resources\views" />
       <recent name="C:\Users\Shazam\Desktop\Unniv\WEB\NouveauProjet\GestionStage\resources\lang" />
       <recent name="C:\Users\Shazam\Desktop\Unniv\WEB\NouveauProjet\GestionStage\resources\views" />
@@ -240,7 +259,16 @@
       <workItem from="1608481312053" duration="1010000" />
       <workItem from="1608484571015" duration="6115000" />
       <workItem from="1608498927400" duration="2430000" />
-      <workItem from="1608589861682" duration="1709000" />
+      <workItem from="1608589861682" duration="2455000" />
+      <workItem from="1608640092008" duration="1592000" />
+      <workItem from="1608664296901" duration="4261000" />
+      <workItem from="1608674051830" duration="6561000" />
+      <workItem from="1608759664219" duration="6622000" />
+      <workItem from="1608771164748" duration="300000" />
+      <workItem from="1608801399927" duration="580000" />
+      <workItem from="1608806564028" duration="237000" />
+      <workItem from="1608809903686" duration="11084000" />
+      <workItem from="1608852586491" duration="1293000" />
     </task>
     <task id="LOCAL-00001" summary="Vues">
       <created>1607553953194</created>
@@ -270,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608462293884</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Footer + update student + differentes pages de redirections">
+      <created>1608591965918</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1608591965918</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,8 +327,8 @@
     <MESSAGE value="Vues" />
     <MESSAGE value="add redirection_entreprise_connecte.blade.php" />
     <MESSAGE value="Connexion User avec le message est connecté" />
-    <MESSAGE value="Footer + update student + differentes pages de redirections" />
     <MESSAGE value=" &quot;Footer + update student + differentes pages de redirections&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value=" &quot;Footer + update student + differentes pages de redirections&quot;" />
+    <MESSAGE value="Footer + update student + differentes pages de redirections" />
+    <option name="LAST_COMMIT_MESSAGE" value="Footer + update student + differentes pages de redirections" />
   </component>
 </project>

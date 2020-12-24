@@ -39,10 +39,6 @@ Route::get('/laravel', function () {
     return view('welcome');
 });
 
-//<-----------------------------Connexions-------------------------------------->
-Route::post('/connexionUser', [App\Http\Controllers\ControllerConnexionUser::class, 'traitement']);
-Route::get('/connexionUser', [App\Http\Controllers\ControllerConnexionUser::class, 'formulaire']);
-
 
 //<-----------------------------ENTREPRISE-------------------------------------->
 
@@ -79,7 +75,7 @@ Route::get('/inscription_students', [App\Http\Controllers\ControllerStudent::cla
 Route::post('/inscription_students', [App\Http\Controllers\ControllerStudent::class, 'inscription_students']);
 
 //Route lister STUDENTS
-Route::get('/lister_students', [App\Http\Controllers\ControllerStudent::class, 'lister_etudiants']);
+Route::get('/lister_students', [App\Http\Controllers\ControllerStudent::class, 'lister_etudiants']);//->middleware('Connected');
 
 //Supprimer STUDENTS
 Route::get('students/lister_students/{id}',[App\Http\Controllers\ControllerStudent::class, 'destroy'])->name('lister_students');
@@ -106,7 +102,6 @@ Route::get('/lister_offres', [App\Http\Controllers\ControllerOffre::class, 'list
 //Modifier offres
 Route::get('offres/modifier_offres/{id}',[App\Http\Controllers\ControllerOffre::class, 'edit'])->name('modifier_offre');
 Route::post('offres/modifier_offres/{id}',[App\Http\Controllers\ControllerOffre::class, 'update'])->name('update_offre');
-
 //Supprimer offres
 Route::get('offres/lister_offres/{id}',[App\Http\Controllers\ControllerOffre::class, 'destroy'])->name('lister_offres');
 
@@ -120,6 +115,10 @@ Route::get('/index_tuteurs.blade.php', function (){
 //Route lister offres
 Route::get('/lister_tuteurs', [App\Http\Controllers\ControllerTuteur::class, 'lister_tuteurs']);
 
+//  Inscription Tuteur
+Route::get('/inscription_tuteurs', [App\Http\Controllers\ControllerTuteur::class, 'formulaire']);
+Route::post('/inscription_tuteurs', [App\Http\Controllers\ControllerTuteur::class, 'inscription_tuteurs']);
+
 //<-----------------------------JURY-------------------------------------->
 Route::get('/index_jury.blade.php', function (){
     return view('index_jury');
@@ -128,6 +127,8 @@ Route::get('/index_jury.blade.php', function (){
 Route::get('/inscription_jury', [App\Http\Controllers\ControllerJury::class, 'formulaire']);
 Route::post('/inscription_jury', [App\Http\Controllers\ControllerJury::class, 'inscription_jury']);
 
+
+
 //Lister Jury
 Route::get('/lister_jury', [App\Http\Controllers\ControllerJury::class, 'lister_jury']);
 
@@ -135,3 +136,31 @@ Route::get('/lister_jury', [App\Http\Controllers\ControllerJury::class, 'lister_
 
 Route::get('/redirection_entreprise_connecte', [App\Http\Controllers\ControllerConnexionUser::class, 'accueil']);
 Route::get('/deconnexion', [App\Http\Controllers\ControllerConnexionUser::class, 'deconnexion']);
+
+
+Route::post('/connexionUser', [App\Http\Controllers\ControllerConnexionUser::class, 'traitement']);
+Route::get('/connexionUser', [App\Http\Controllers\ControllerConnexionUser::class, 'formulaire']);
+
+//<-----------------------------------Redirections-------------------------------------------->
+Route::get('/redirection_entreprise_connecte', function (){
+    return view('redirection_entreprise_connecte');
+});
+Route::get('/redirection_jurys_connecte', function (){
+    return view('redirection_jurys_connecte');
+});
+Route::get('/redirection_tuteurs_connecte', function (){
+    return view('redirection_tuteurs_connecte');
+});
+Route::get('/redirection_students_connecte', function (){
+    return view('redirection_students_connecte');
+});
+//Route::get('/redirection_entreprise_connecte','redirection_entreprise_connecte');
+//Route::get('/redirection_jurys_connecte','redirection_jurys_connecte');
+//Route::get('/redirection_tuteurs_connecte','redirection_tuteurs_connecte');
+//Route::get('/redirection_students_connecte','redirection_students_connecte');
+
+//<-----------------------------------Middlware-------------------------------------------->
+
+
+
+

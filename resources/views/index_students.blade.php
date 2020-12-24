@@ -55,11 +55,9 @@
                 <a class="nav-link " href="lister_entreprises">Entreprises partenaires</a><span class="sr-only">(current)</span></a>
             </li>
 
+
             <li class="nav-item active">
-                <a class="nav-link" href="#">Connection</a><span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link " href="inscription_students">Inscription</a><span class="sr-only">(current)</span></a>
+                <a class="nav-link " href="inscription_students"><strong>Inscription</strong></a><span class="sr-only">(current)</span></a>
             </li>
         </ul>
     </div>

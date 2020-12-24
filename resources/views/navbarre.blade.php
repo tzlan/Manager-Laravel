@@ -56,7 +56,7 @@
                     <a class="nav-link" href="index_jury.blade.php">Jury <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="index_users.blade.php">Utilisateurs <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index_users.blade.php">👨🏻‍💻<span class="sr-only">(current)</span></a>
                 </li>
 
 

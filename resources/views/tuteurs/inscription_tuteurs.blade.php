@@ -43,55 +43,40 @@
 <br>
 <br>
 <div class="container p-3 my-3 border">
-    <h1>Formulaire d'inscription Etudiant </h1>
+    <h1>Formulaire d'inscription Tuteurs </h1>
     <br>
     <br>
     <br>
 
-    <form action="/inscription_tuteur" method="post">
+    <form action="/inscription_tuteurs" method="post">
         {{csrf_field()}}
         <small  class="form-text text-muted">
             Saisir votre ID
         </small>
-        <p> <input type="text" name="id" placeholder="Id Etudiant " ></p>
+        <p> <input type="text" name="id" placeholder="Votre Id" ></p>
         @if($errors->has('id'))
             <p>{{$errors->first('id')}}</p>
-
         @endif
 
-
-        <p>   <input type="text" name="name" placeholder="Nom de l'étudiant"></p>
+        <small  class="form-text text-muted">Nom</small>
+        <p>   <input type="text" name="name" placeholder="Cooper"></p>
         @if($errors->has('name'))
             <p>{{$errors->first('name')}}</p>
-
         @endif
 
-        <p>   <input type="text" name="first_name" placeholder="Prenom"></p>
+        <small  class="form-text text-muted">Prenom</small>
+        <p>   <input type="text" name="first_name" placeholder="Sheldon"></p>
         @if($errors->has('first_name'))
             <p>{{$errors->first('first_name')}}</p>
-
         @endif
 
-        <p>   <input type="text" name="class" placeholder="Niveau universitaire"></p>
-        @if($errors->has('class'))
-            <p>{{$errors->first('class')}}</p>
-
-        @endif
-        <p>   <input type="text" name="cv" placeholder="Lien Linkdin"></p>
-        @if($errors->has('cv'))
-            <p>{{$errors->first('cv')}}</p>
-
-        @endif
-        <p>   <input type="text" name="date_n" placeholder="Date de naissance"></p>
+        <small  class="form-text text-muted">Date de naissance</small>
+        <p>   <input type="date" name="date_n" placeholder="Votre date de naissance"></p>
         @if($errors->has('date_n'))
             <p>{{$errors->first('date_n')}}</p>
 
         @endif
-        <p>   <input type="text" name="motivation" placeholder="Lien vers votre LM"></p>
-        @if($errors->has('motivation'))
-            <p>{{$errors->first('motivation')}}</p>
-
-        @endif
+        <small  class="form-text text-muted">Statut (E etudiant , J jury...)</small>
         <p>   <input type="text" name="status" placeholder="Votre statut"></p>
         @if($errors->has('status'))
             <p>{{$errors->first('status')}}</p>

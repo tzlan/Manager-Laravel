@@ -9,10 +9,14 @@ use Illuminate\Support\Facades\Auth;
 
 class ControllerConnexionUser extends Controller
 {
+    public function __construct(){
+
+       $this->middleware('auth')->only(['accueil']);
+    }
     public function accueil()
     {
 
-        //var_dump(auth()->check());--> Verification si on est connecté
+        var_dump(auth()->check());//--> Verification si on est connecté
 
         if (auth()->guest()) {
             return redirect('/connexionUser')->withErrors([
@@ -20,8 +24,9 @@ class ControllerConnexionUser extends Controller
 
             ]);
         }
-        return view('redirection_entreprise_connecte');
+    return view('redirection_entreprise_connecte');
     }
+
     //Renvoi la vue de la connexion
     public function formulaire(){
         return view('connexions/connexionUser');
@@ -36,26 +41,27 @@ class ControllerConnexionUser extends Controller
         $resultat = Auth::attempt($request->only('email', 'password'));
         var_dump($resultat);
 
-        $user = Auth::user();
+    $user = Auth::user();
+        if($resultat ){
+            if ($user->entreprise_id){
+             return redirect('redirection_entreprise_connecte');
+            }
+            if($user->jury_id){
+                return redirect('redirection_jurys_connecte');
+            }
+            if($user->tuteur_id){
+                return redirect('redirection_tuteurs_connecte');
+            }
+            if($user->students_id){
+                return redirect('redirection_students_connecte');
+            }
 
-        if ($user->entreprise_id){
-         return redirect('redirection_entreprise_connecte');
         }
-        if($user->jury_id){
-            return redirect('redirection_jurys_connecte');
-        }
-        if($user->tuteur_id){
-            return redirect('redirection_tuteurs_connecte');
-        }
-        if($user->students_id){
-            return redirect('redirection_students_connecte');
-        }
-
-
 
          return back()->withInput()->withErrors([
 
-             'email'=>'Votre email est incorrect'
+             'email'=>'Votre email ou mot de passe est incorrect',
+             'password'=>'Votre email ou mot de passe est incorrect'
          ]);
 
     }

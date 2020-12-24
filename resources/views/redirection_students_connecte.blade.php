@@ -58,12 +58,7 @@
                             <a class="nav-link " href="lister_entreprises">Entreprises partenaires</a><span class="sr-only">(current)</span></a>
                         </li>
 
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Connection</a><span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link " href="inscription_students">Inscription</a><span class="sr-only">(current)</span></a>
-                        </li>
+
                     </ul>
                 </div>
                 <a class="nav-link" href="/deconnexion">Deconnexion  <span class="sr-only">(current)</span></a>
@@ -88,10 +83,10 @@
 <br><br><br><br><br><br>
 
 
-<div style="text-align: center;"> <h1>Bienvenu sur votre espace 🤙🏻 </h1></div>
+<div style="text-align: center;"> <h1>Bienvenu sur votre espace 🎓</h1></div>
 
 
-<div style="text-align: center;"><p>Vous etes desormais connecté avec votre compte entreprise</p></div>
+<div style="text-align: center;"><p>Vous etes desormais connecté avec votre compte étudiant</p></div>
 
 
 </body>

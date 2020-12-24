@@ -68,6 +68,7 @@
         @if($errors->has('password'))
             <p>{{$errors->first('password')}}</p>
 
+
         @endif
 
         <input type="submit" value="Se connecter" >

@@ -48,17 +48,17 @@
             </li>
 
             <li class="nav-item active">
-                <a class="nav-link" href="index_entreprise.blade.php">Valider stage <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index_entreprise">Valider stage <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="index_tuteurs.blade.php">Ajouter une remarque <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index_tuteurs">Ajouter une remarque <span class="sr-only">(current)</span></a>
             </li>
-
-
-
             <li class="nav-item active">
-                <a class="nav-link" href="#"><strong>Connectez Vous</strong></a><span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="inscription_jury">Inscription <span class="sr-only">(current)</span></a>
             </li>
+
+
+
 
         </ul>
     </div>

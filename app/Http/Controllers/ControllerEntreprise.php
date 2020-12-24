@@ -32,7 +32,7 @@ class ControllerEntreprise extends Controller
 
             ]);
 
-            $entreprise = Entreprise::create([
+            $entreprises = Entreprise::create([
                 'id' => request('id'),
                 'name' => request('name'),
                 'no_rue' => request('no_rue'),
@@ -44,12 +44,6 @@ class ControllerEntreprise extends Controller
              return view('prise_en_compte_inscription');
 
     }
-
-
-
-
-
-
 
     /**
      * Display a listing of the resource.

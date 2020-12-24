@@ -3,17 +3,26 @@
 namespace App\Http\Controllers;
 use App\Models\Offre;
 use Illuminate\Http\Request;
+namespace App\Http\Middleware\Connected;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Http;
 
 
 class ControllerOffre extends Controller
 {
-    public function lister_offres(){
-        $offres = Offre::all();//Fonction qui liste les offres
-        return view('offres/lister_offres',[
-            'offres'=> $offres,
-        ]);
+    public function lister_offres()
+    {
+
+        if (auth()->check()) {
+            $offres = Offre::all();//Fonction qui liste les offres
+            return view('offres/lister_offres', [
+                'offres' => $offres,
+            ]);
+        }else{
+            return redirect('connexionUser')->withErrors([
+                'email'=>"Vous devez obligatoirement etre connecté pour avoir ces informations"
+            ]);
+        }
     }
     public function formulaire(){
         return view('offres/inscription_offres');

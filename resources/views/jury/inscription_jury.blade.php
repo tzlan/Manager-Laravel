@@ -53,26 +53,39 @@
         <small  class="form-text text-muted">
             Saisir votre ID
         </small>
-        <p> <input type="text" name="id" placeholder="Id Jury" ></p>
+        <p> <input type="text" name="id" placeholder="524" ></p>
         @if($errors->has('id'))
             <p>{{$errors->first('id')}}</p>
         @endif
 
-        <p>   <input type="text" name="name" placeholder="Votre nom"></p>
+        <small  class="form-text text-muted">
+            Saisir votre Nom
+        </small>
+        <p>   <input type="text" name="name" placeholder="Edinson"></p>
         @if($errors->has('name'))
             <p>{{$errors->first('name')}}</p>
         @endif
 
-        <p>   <input type="text" name="first_name" placeholder="Votre prenom"></p>
+        <small  class="form-text text-muted">
+            Saisir votre prenom
+        </small>
+        <p>   <input type="text" name="first_name" placeholder="Cavani"></p>
         @if($errors->has('first_name'))
             <p>{{$errors->first('first_name')}}</p>
         @endif
 
-        <p>   <input type="date" name="date_n" placeholder="Votre prenom"></p>
+        <small  class="form-text text-muted">
+            Saisir votre date de naissance
+        </small>
+        <p>   <input type="date" name="date_n" ></p>
         @if($errors->has('date_n'))
             <p>{{$errors->first('date_n')}}</p>
         @endif
 
+
+        <small  class="form-text text-muted">
+            Saisir votre statut
+        </small>
         <p>   <input type="text" name="status" placeholder="Votre statut"></p>
         @if($errors->has('status'))
             <p>{{$errors->first('status')}}</p>
@@ -82,24 +95,5 @@
         <input type="submit" value="Inscription" >
     </form>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @endsection
 

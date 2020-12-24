@@ -58,11 +58,11 @@
             </li>
 
 
-
-
             <li class="nav-item active">
-                <a class="nav-link" href="#"><strong>Connectez Vous</strong></a><span class="sr-only">(current)</span></a>
+                <a class="nav-link " href="inscription_tuteurs"><strong>Inscription</strong></a><span class="sr-only">(current)</span></a>
             </li>
+
+
 
         </ul>
     </div>
