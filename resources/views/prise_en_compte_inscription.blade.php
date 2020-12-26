@@ -43,20 +43,8 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
 
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Stages <span class="sr-only">(current)</span></a>
-            </li>
 
-            <li class="nav-item active">
-                <a class="nav-link" href="index_entreprise.blade.php">Entreprises <span class="sr-only">(current)</span></a>
-            </li>
 
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Connectez Vous</a><span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link " href="#">Inscrivez vous</a><span class="sr-only">(current)</span></a>
-            </li>
         </ul>
     </div>
 
@@ -74,8 +62,6 @@
 
 
 <div style="text-align: center;"> <h1>Votre enregistrement à bien été effectué</h1></div>
-
-
 
 
 

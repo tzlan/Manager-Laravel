@@ -10,12 +10,12 @@ use Illuminate\Support\Facades\Http;
 
 class ControllerStudent extends Controller
 {
-
-    public function __construct(){
-
-        $this->middleware('auth')->except(['lister_etudiants','formulaire']);
-        //var_dump($this);
-    }
+//
+//    public function __construct(){
+//
+//        $this->middleware('auth')->except(['lister_etudiants','formulaire']);
+//        //var_dump($this);
+//    }
     public function lister_etudiants()
     {
         if (auth()->check()) {
@@ -50,7 +50,7 @@ class ControllerStudent extends Controller
                 'status' => ['required'],
 
             ]);
-        if (auth()->check()) {
+
             $entreprise = Student::create([
                 'id' => request('id'),
                 'name' => request('name'),
@@ -62,10 +62,11 @@ class ControllerStudent extends Controller
                 'status' => request('status'),
 
             ]);
+            
 
             return view('prise_en_compte_inscription');
 
-        }
+
     }
 
 

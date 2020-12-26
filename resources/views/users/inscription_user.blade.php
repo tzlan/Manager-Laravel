@@ -1,5 +1,3 @@
-@extends('navbarre')
-@section('content')
 
 
     <!doctype html>
@@ -21,6 +19,41 @@
 <title>Université Nanterre Stage</title>
 
 
+<nav class="navbar navbar-expand-lg navbar-dark .bg-danger " style="background-color: #de1818;">
+
+    <a class="navbar-brand" href="http://127.0.0.1:8000/">Université Paris Nanterre</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+
+            <li class="nav-item active">
+                <a class="nav-link" href="index_students.blade.php">Etudiants <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="index_entreprise.blade.php">Entreprises <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="index_tuteurs.blade.php">Tuteurs <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="index_jury.blade.php">Jury <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="index_users.blade.php">👨🏻‍💻<span class="sr-only">(current)</span></a>
+            </li>
+
+
+
+
+
+        </ul>
+    </div>
+
+
+</nav>
 
 
 
@@ -36,6 +69,7 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 -->
+
 <br>
 <br>
 <br>
@@ -204,9 +238,6 @@
 
 
 
-
-
-@endsection
 
 
 

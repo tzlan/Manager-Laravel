@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -43,66 +42,33 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="lister_offres">Stages <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="lister_students">Etudiants en recherche<span class="sr-only">(current)</span></a>
-            </li>
 
 
-
-
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Connection</a><span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link " href="inscription_students">Inscription</a><span class="sr-only">(current)</span></a>
-            </li>
         </ul>
     </div>
 
 
 </nav>
-<br><br><br><br>
+<br><br><br><br><br><br><br>
 
 
-<div style="text-align: center;"><h1> Les offres </h1>
-    <br><br><br><br>
-
-    <div class="container">
-<table  class=" table table-striped">
-    <thead>
-    <tr>
-        <th scope="col">Reférence</th>
-        <th scope="col">Nom</th>
-        <th scope="col">Description</th>
-        <th scope="col">Debut</th>
-        <th scope="col">Fin</th>
-        <th scope="col">Modifier </th>
-        <th scope="col">Supprimer</th>
-        <th scope="col">Postuler</th>
-
-    </tr>
-    </thead>
-    <tbody>
+{{--Sert a faire heriter le comme include--}}
+@yield('content')
 
 
-        @foreach($offres as $offre)
-            <tr>
-            <td>{{$offre->id}}</td>
-            <td>{{$offre->name}}</td>
-            <td>{{$offre->description}}</td>
-            <td>{{$offre->start}}</td>
-            <td>{{$offre->end}}</td>
+{{--ICI FIN DE LA NAVBARRE--}}
 
 
-               <td><a href="{{url('offres/modifier_offres/'.$offre->id)}}" type="button" class="btn btn-warning">Modifier</a></td>
-                <td><a href="{{url('offres/lister_offres/'.$offre->id)}}" type="button" class="btn btn-danger">Supprimer</a></td>
-                <td><a href="{{url('offres/lister_offres/'.$offre->id)}}" type="button" class="btn btn-success">Postuler</a></td>
-            </tr>
-        @endforeach
 
-</div>
-    </div>
-</table>
+<div style="text-align: center;"> <h1>Votre candidature a bien été envoyée</h1></div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

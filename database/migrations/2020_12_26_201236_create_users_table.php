@@ -22,8 +22,9 @@ class CreateUsersTable extends Migration
             $table->string('password');
 
 
-            $table->foreignID('entreprise_id')->nullable()->constrained('entreprises');
+
             $table->foreignID('jury_id')->nullable()->constrained('jurys');
+            $table->foreignID('entreprise_id')->nullable()->constrained('entreprises');
             $table->foreignID('tuteur_id')->nullable()->constrained('tuteurs');
             $table->foreignID('students_id')->nullable()->constrained('students');
             $table->rememberToken();

@@ -8,12 +8,22 @@ use Illuminate\Http\Request;
 
 class ControllerTuteur extends Controller
 {
-    public function lister_tuteurs(){
-        $tuteurs = Tuteur::all();//Fonction qui liste les tuteurs
-        return view('tuteurs/lister_tuteurs',[
-            'tuteurs'=> $tuteurs,
-        ]);
+    public function lister_tuteurs()
+    {
+        if (auth()->check()) {
+            $tuteurs = Tuteur::all();//Fonction qui liste les tuteurs
+            return view('tuteurs/lister_tuteurs', [
+                'tuteurs' => $tuteurs,
+            ]);
+        }else {
+            return redirect('connexionUser')->withErrors([
+                'email' => "Vous devez obligatoirement etre connecté pour avoir ces informations"
+            ]);
+        }
     }
+
+
+
         public function formulaire(){
         return view('tuteurs/inscription_tuteurs');
     }

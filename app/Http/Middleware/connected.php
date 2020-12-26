@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 
-class Connected
+class connected
 {
     /**
      * Handle an incoming request.
@@ -16,14 +16,6 @@ class Connected
      */
     public function handle(Request $request, Closure $next)
     {
-        if (auth()->guest()) {
-
-
-            return redirect('connexionUser')->withErrors([
-                'email' => "Vous devez obligatoirement vous connecter"
-            ]);
-        }
-
         return $next($request);
     }
 }

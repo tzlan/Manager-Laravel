@@ -30,6 +30,7 @@ Route::get('/index_users.blade.php', function (){
     return view('index_users');
 });
 
+
 //<------------------------------------------------------------------------------>
 //Routes generales
 Route::get('/navbarre', function (){
@@ -154,11 +155,9 @@ Route::get('/redirection_tuteurs_connecte', function (){
 Route::get('/redirection_students_connecte', function (){
     return view('redirection_students_connecte');
 });
-//Route::get('/redirection_entreprise_connecte','redirection_entreprise_connecte');
-//Route::get('/redirection_jurys_connecte','redirection_jurys_connecte');
-//Route::get('/redirection_tuteurs_connecte','redirection_tuteurs_connecte');
-//Route::get('/redirection_students_connecte','redirection_students_connecte');
-
+Route::get('/redirection_admin_connecte', function (){
+    return view('/redirection_admin_connecte');
+});
 //<-----------------------------------Middlware-------------------------------------------->
 
 

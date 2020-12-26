@@ -80,7 +80,7 @@
             <p>{{$errors->first('cv')}}</p>
 
         @endif
-        <p>   <input type="text" name="date_n" placeholder="Date de naissance"></p>
+        <p>   <input type="date" name="date_n" placeholder="Date de naissance"></p>
         @if($errors->has('date_n'))
             <p>{{$errors->first('date_n')}}</p>
 

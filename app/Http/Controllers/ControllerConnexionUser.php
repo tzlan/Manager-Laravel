@@ -43,6 +43,9 @@ class ControllerConnexionUser extends Controller
 
     $user = Auth::user();
         if($resultat ){
+//            if($user->entreprise_id = 1){
+//                return redirect('redirection_admin_connecte');
+//            }
             if ($user->entreprise_id){
              return redirect('redirection_entreprise_connecte');
             }
@@ -55,6 +58,7 @@ class ControllerConnexionUser extends Controller
             if($user->students_id){
                 return redirect('redirection_students_connecte');
             }
+
 
         }
 
