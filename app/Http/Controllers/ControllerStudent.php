@@ -1,6 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\Candidature;
+use App\Models\Entreprise;
+use App\Models\Offre;
 use App\Models\Student;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
@@ -10,12 +13,7 @@ use Illuminate\Support\Facades\Http;
 
 class ControllerStudent extends Controller
 {
-//
-//    public function __construct(){
-//
-//        $this->middleware('auth')->except(['lister_etudiants','formulaire']);
-//        //var_dump($this);
-//    }
+
     public function lister_etudiants()
     {
         if (auth()->check()) {
@@ -62,7 +60,7 @@ class ControllerStudent extends Controller
                 'status' => request('status'),
 
             ]);
-            
+
 
             return view('prise_en_compte_inscription');
 
@@ -108,5 +106,11 @@ class ControllerStudent extends Controller
 
 
 
+//
+//    public function __construct(){
+//
+//        $this->middleware('auth')->except(['lister_etudiants','formulaire']);
+//        //var_dump($this);
+//    }
 
 }

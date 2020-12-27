@@ -58,6 +58,9 @@
                         <li class="nav-item active">
                             <a class="nav-link " href="lister_entreprises">Entreprises partenaires</a><span class="sr-only">(current)</span></a>
                         </li>
+                        <li class="nav-item active">
+                            <a class="nav-link " href="lister_candidatures">Candidatures stages</a><span class="sr-only">(current)</span></a>
+                        </li>
 
 
 

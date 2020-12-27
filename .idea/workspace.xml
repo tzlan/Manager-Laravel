@@ -23,17 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11244e0a-5dd3-4679-b4a8-ceef9bf6ed6e" name="Default Changelist" comment="Footer + update student + differentes pages de redirections">
-      <change afterPath="$PROJECT_DIR$/resources/views/candidatures/lister_candidatures.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerCandidature.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerCandidature.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerConnexionUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerConnexionUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerOffre.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerOffre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Offre.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Offre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_18_094336_create_offre_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_18_094336_create_offre_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/offres/inscription_offres.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/offres/inscription_offres.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/offres/lister_offres.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/offres/lister_offres.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/prise_en_compte_offre_creation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/prise_en_compte_offre_creation.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerStudent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/candidatures/lister_candidatures.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/candidatures/lister_candidatures.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/redirection_entreprise_connecte.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/redirection_entreprise_connecte.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/students/lister_students.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students/lister_students.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,7 +256,8 @@
       <workItem from="1608852586491" duration="1982000" />
       <workItem from="1608854595896" duration="241000" />
       <workItem from="1608902765214" duration="1633000" />
-      <workItem from="1609004538493" duration="20067000" />
+      <workItem from="1609004538493" duration="20643000" />
+      <workItem from="1609080304687" duration="6818000" />
     </task>
     <task id="LOCAL-00001" summary="Vues">
       <created>1607553953194</created>

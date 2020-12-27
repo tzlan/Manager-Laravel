@@ -86,7 +86,7 @@
     <table  class=" table table-striped">
         <thead>
         <tr>
-
+            <th scope="col">Id</th>
             <th scope="col">Nom</th>
             <th scope="col">Prénom</th>
             <th scope="col">Classe</th>
@@ -103,6 +103,7 @@
 
         @foreach($students as $student)
             <tr>
+                <td>{{$student->id}}</td>
                 <td>{{$student->name}}</td>
                 <td>{{$student->first_name}}</td>
                 <td>{{$student->class}}</td>
