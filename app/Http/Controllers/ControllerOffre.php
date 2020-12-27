@@ -45,6 +45,7 @@ class ControllerOffre extends Controller
             'description' => ['required'],
             'start' => ['required'],
             'end' => ['required'],
+            'entreprise_id'=>['required'],
 
 
         ]);
@@ -55,9 +56,11 @@ class ControllerOffre extends Controller
             'description' => request('description'),
             'start' => request('start'),
             'end' => request('end'),
+            'entreprise_id' => request('entreprise_id'),
 
 
         ]);
+
 
         return view('prise_en_compte_offre_creation');
 

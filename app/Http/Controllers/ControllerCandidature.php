@@ -1,37 +1,48 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Models\Candidature;
 use Illuminate\Http\Request;
+use App\Models\Candidature;
+use Illuminate\Support\Facades\Auth;
 
 class ControllerCandidature extends Controller
 {
-    public function inscription_candidature()
-    {
+    public function inscription_candidature(){
+
+
 
 
         request()->validate([
             'id' => ['required'],
-            'name' => ['required'],
-            'description' => ['required'],
-            'start' => ['required'],
-            'end' => ['required'],
 
-
+            'entreprise_id' =>  ['required'],
+            'offre_id' =>  ['required'],
+            'students_id' =>  ['required'],
         ]);
 
         $candidature = Candidature::create([
+
             'id' => request('id'),
-            'name' => request('name'),
-            'description' => request('description'),
-            'start' => request('start'),
-            'end' => request('end'),
 
-
+            'entreprise_id' => request('entreprise_id'),
+            'offre_id' => request('offre_id'),
+            'students_id' => request('students_id'),
         ]);
 
-        return view('prise_en_compte_offre_creation');
+        return view('prise_en_compte_postuler');
+    }
 
+
+    public function lister_candidatures(){
+        $user = Auth::user();
+
+        //Candidature::where('entreprise_id', xxx) ->get();
+
+            $candidatures = Candidature::all();
+
+
+        return view('candidatures/lister_candidatures',[
+            'candidatures'=> $candidatures,
+        ]);
     }
 }

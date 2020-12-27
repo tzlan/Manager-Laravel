@@ -41,59 +41,37 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="lister_offres">Stages <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="lister_students">Etudiants en recherche<span class="sr-only">(current)</span></a>
-            </li>
 
-        </ul>
-    </div>
 
 
 </nav>
 <br><br><br><br>
 
 
-<div style="text-align: center;"><h1> Les offres </h1>
+<div style="text-align: center;"><h1> Les candidatures </h1>
     <br><br><br><br>
 
     <div class="container">
 <table  class=" table table-striped">
     <thead>
     <tr>
-        <th scope="col">Reférence offre</th>
-        <th scope="col">Nom</th>
-        <th scope="col">Description</th>
-        <th scope="col">Debut</th>
-        <th scope="col">Fin</th>
-        <th scope="col">Reférence entreprise</th>
-        <th scope="col">Modifier </th>
-        <th scope="col">Supprimer</th>
-        <th scope="col">Postuler</th>
+        <th scope="col">Reference candidature</th>
+        <th scope="col">Ref étudiant</th>
+        <th scope="col">Ref offre</th>
+        <th scope="col">Ref entreprise</th>
+
 
     </tr>
     </thead>
     <tbody>
 
 
-        @foreach($offres as $offre)
+        @foreach($candidatures as $candidature)
             <tr>
-            <td>{{$offre->id}}</td>
-            <td>{{$offre->name}}</td>
-            <td>{{$offre->description}}</td>
-            <td>{{$offre->start}}</td>
-            <td>{{$offre->end}}</td>
-            <td>{{$offre->entreprise_id}}</td>
-
-
-
-               <td><a href="{{url('offres/modifier_offres/'.$offre->id)}}" type="button" class="btn btn-warning">Modifier</a></td>
-                <td><a href="{{url('offres/lister_offres/'.$offre->id)}}" type="button" class="btn btn-danger">Supprimer</a></td>
-                <td><a href="{{url('offres/lister_offres/'.$offre->id)}}" type="button" class="btn btn-success">Postuler</a></td>
+                <td>{{$candidature->id}}</td>
+                <td>{{$candidature->student_id}}</td>
+                <td>{{$candidature->offre_id}}</td>
+                <td>{{$candidature->entreprise_id}}</td>
             </tr>
         @endforeach
 

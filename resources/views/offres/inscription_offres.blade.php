@@ -50,9 +50,7 @@
 
     <form action="/inscription_offre" method="post">
         {{csrf_field()}}
-        <small  class="form-text text-muted">
-            Saisir votre ID
-        </small>
+        <small  class="form-text text-muted">Saisir un ID pour l'offre *</small>
         <p> <input type="text" name="id" placeholder="Ref offre" ></p>
         @if($errors->has('id'))
             <p>{{$errors->first('id')}}</p>
@@ -60,27 +58,35 @@
         @endif
 
 
-        <p>   <input type="text" name="name" placeholder="Nom de l'offre"></p>
+        <small  class="form-text text-muted">Nom de l'offre *</small>
+        <p>   <input type="text" name="name" placeholder="Developper Fulstack"></p>
         @if($errors->has('name'))
             <p>{{$errors->first('name')}}</p>
-
         @endif
 
-        <p>   <input type="text" name="description" placeholder="Description de l'offre"></p>
+        <small  class="form-text text-muted">Descriptionde l'offre *</small>
+        <p>   <input type="text" name="description" placeholder="Android , Arduino ..."></p>
         @if($errors->has('description'))
             <p>{{$errors->first('description')}}</p>
 
         @endif
 
-        <p>   <input type="date" name="start" placeholder="Date debut"></p>
+        <small  class="form-text text-muted">Date début *</small>
+        <p>   <input type="date" name="start" ></p>
         @if($errors->has('start'))
             <p>{{$errors->first('start')}}</p>
-
         @endif
 
-        <p>   <input type="date" name="end" placeholder="Date fin"></p>
+        <small  class="form-text text-muted">Date fin *</small>
+        <p>   <input type="date" name="end" ></p>
         @if($errors->has('end'))
             <p>{{$errors->first('end')}}</p>
+        @endif
+
+        <small  class="form-text text-muted">Votre identifiant entreprise *</small>
+        <p>   <input type="text" name="entreprise_id" placeholder=" 007"></p>
+        @if($errors->has('entreprise_id'))
+            <p>{{$errors->first('entreprise_id')}}</p>
 
         @endif
 

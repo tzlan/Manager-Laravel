@@ -1,5 +1,5 @@
 <?php
-//Petit com changement de PC
+
 namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -41,7 +41,8 @@ class ControllerConnexionUser extends Controller
         $resultat = Auth::attempt($request->only('email', 'password'));
         var_dump($resultat);
 
-    $user = Auth::user();
+        $user = Auth::user();
+
         if($resultat ){
 //            if($user->entreprise_id = 1){
 //                return redirect('redirection_admin_connecte');

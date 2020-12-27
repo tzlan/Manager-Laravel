@@ -85,6 +85,7 @@ Route::get('students/lister_students/{id}',[App\Http\Controllers\ControllerStude
 Route::get('students/modifier_students/{id}',[App\Http\Controllers\ControllerStudent::class, 'edit'])->name('modifier_student');
 Route::post('students/modifier_students/{id}',[App\Http\Controllers\ControllerStudent::class, 'update'])->name('update_student');
 
+//Postuler
 
 
 //<-----------------------------OFFRES-------------------------------------->
@@ -158,8 +159,9 @@ Route::get('/redirection_students_connecte', function (){
 Route::get('/redirection_admin_connecte', function (){
     return view('/redirection_admin_connecte');
 });
-//<-----------------------------------Middlware-------------------------------------------->
-
+//<-----------------------------------Candidatures-------------------------------------------->
+//Lister les candidatures
+Route::get('/lister_candidatures', [App\Http\Controllers\ControllerCandidature::class, 'lister_candidatures']);
 
 
 

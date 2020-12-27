@@ -19,6 +19,9 @@ class CreateOffreTable extends Migration
             $table->string('description');
             $table->string('start');
             $table->string('end');
+
+            $table->foreignID('entreprise_id')->nullable()->constrained('entreprises');
+
             $table->timestamps();
         });
     }

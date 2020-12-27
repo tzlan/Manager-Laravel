@@ -23,28 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11244e0a-5dd3-4679-b4a8-ceef9bf6ed6e" name="Default Changelist" comment="Footer + update student + differentes pages de redirections">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerCandidature.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerStage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Candidature.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Stage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_26_201431_create_stage_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_26_203023_create_candidatures_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/prise_en_compte_postuler.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/redirection_admin_connecte.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/candidatures/lister_candidatures.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerCandidature.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerCandidature.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerConnexionUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerConnexionUser.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerOffre.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerOffre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerStudent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerTuteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerTuteur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Connected.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_18_091524_create_tuteur_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_18_091524_create_tuteur_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_26_201236_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index_users.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index_users.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Offre.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Offre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_18_094336_create_offre_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_18_094336_create_offre_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/offres/inscription_offres.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/offres/inscription_offres.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/offres/lister_offres.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/offres/lister_offres.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/prise_en_compte_inscription.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/prise_en_compte_inscription.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/redirection_students_connecte.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/redirection_students_connecte.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/students/inscription_students.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students/inscription_students.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/users/inscription_user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/inscription_user.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/prise_en_compte_offre_creation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/prise_en_compte_offre_creation.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -171,6 +159,9 @@
       <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
     </include_path>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="1kSHWRCxfUBelRD0xUWs8uECjC5" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -180,7 +171,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/candidatures" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -194,11 +185,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\talza\Desktop\Unniv\WEB\NewInstall\gestion2\resources\views\candidatures" />
       <recent name="C:\Users\talza\Desktop\Unniv\WEB\NewInstall\gestion2\resources\views" />
       <recent name="C:\Users\talza\Desktop\Unniv\WEB\NewInstall\gestion2\resources" />
       <recent name="C:\Users\talza\Desktop\Unniv\WEB\NewInstall\gestion2\resources\views\connexions" />
       <recent name="C:\Users\Shazam\Desktop\Unniv\WEB\NouveauProjet\GestionStage\resources\lang" />
-      <recent name="C:\Users\Shazam\Desktop\Unniv\WEB\NouveauProjet\GestionStage\resources\views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\talza\Desktop\Unniv\WEB\NewInstall\gestion2\resources\views" />
@@ -270,7 +261,7 @@
       <workItem from="1608852586491" duration="1982000" />
       <workItem from="1608854595896" duration="241000" />
       <workItem from="1608902765214" duration="1633000" />
-      <workItem from="1609004538493" duration="11449000" />
+      <workItem from="1609004538493" duration="20067000" />
     </task>
     <task id="LOCAL-00001" summary="Vues">
       <created>1607553953194</created>
