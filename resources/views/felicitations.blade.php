@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,7 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <title>Université Nanterre Stage</title>
 </head>
-<body>
+<center>
 
 <!-- Optional JavaScript; choose one of the two! -->
 
@@ -43,11 +42,9 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
+
             <li class="nav-item active">
-                <a class="nav-link" href="lister_offres">Stages <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="lister_students">Etudiants en recherche<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="lister_offres">Retour aux offres <span class="sr-only">(current)</span></a>
             </li>
 
         </ul>
@@ -55,66 +52,28 @@
 
 
 </nav>
-<br><br><br><br>
+<br><br><br><br><br><br><br>
 
 
-<div style="text-align: center;"><h1> Les offres </h1>
-    <br><br><br><br>
-
-    <div class="container">
-<table  class=" table table-striped">
-    <thead>
-    <tr>
-        <th scope="col">Reférence offre</th>
-        <th scope="col">Nom</th>
-        <th scope="col">Description</th>
-        <th scope="col">Debut</th>
-        <th scope="col">Fin</th>
-        <th scope="col">Reférence entreprise</th>
-        @if(auth()->user()->entreprise_id)
-        <th scope="col">Modifier </th>
-        <th scope="col">Supprimer</th>
-        <th scope="col">Postuler</th>
-        @endif
-
-    </tr>
-    </thead>
-    <tbody>
+{{--Sert a faire heriter le comme include--}}
+@yield('content')
 
 
-        @foreach($offres as $offre)
-            <tr>
-            <td>{{$offre->id}}</td>
-            <td>{{$offre->name}}</td>
-            <td>{{$offre->description}}</td>
-            <td>{{$offre->start}}</td>
-            <td>{{$offre->end}}</td>
-            <td>{{$offre->entreprise_id}}</td>
+{{--ICI FIN DE LA NAVBARRE--}}
+
+    <img src="images/logo_Paris_Nanterre_couleur_CMJN.png" ><br><br><br><br>
 
 
-                @if(auth()->user()->entreprise_id)
-                <td><a href="{{url('offres/modifier_offres/'.$offre->id)}}" type="button" class="btn btn-warning">Modifier</a></td>
-                <td><a href="{{url('offres/lister_offres/'.$offre->id)}}" type="button" class="btn btn-danger">Supprimer</a></td>
-                <td>
+    <div style="text-align: center;"> <h1>🥳Felicitations vous avez candidaté à une offre🎉</h1></div>
+<div style="text-align: center;"><p> Bravo ! L'entreprise à reçu votre candidature et ne manquera pas de vous répondre</p></div>
 
-                    <form action="{{route('postuler_offres',[
-                                        'student_id'=>auth()->user()->students_id,
-                                        'offre_id'=>$offre->id,
-                                        'entreprise_id'=>$offre->entreprise_id]
 
-                                        )}}"
+    <img alt="" src="images/congrats2.gif" />
 
-                                        method="POST">
-                            @csrf
-                            <button  type="submit" class="btn btn-success">Postuler</button>
-                    </form>
 
-                </td>
-                @endif
 
-            </tr>
-        @endforeach
 
-</div>
-</div>
-</table>
+
+
+</body>
+</html>

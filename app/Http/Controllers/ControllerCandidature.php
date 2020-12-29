@@ -63,13 +63,40 @@ class ControllerCandidature extends Controller
 //
 //    }
 
-    public function postuler($student_id,$offre_id,$entreprise_id){
+    public function postuler_offres($student_id,$offre_id,$entreprise_id){
+           //dd($student_id,$offre_id,$entreprise_id);
+           $user = Auth::user();
 
-        $user = Auth::user();
+
+        if (auth()->guest()) {
+            return redirect('/connexionUser')->withErrors([
+                'email' => "Vous n'avez pas acces a cette page sans etre connecté",
+
+            ]);
+        }
 
         $offre = Offre::find($offre_id);
+
+        if(!$offre){
+            return redirect('/connexionUser')->withErrors([
+                'email' => "Vous n'avez pas acces a cette page sans etre connecté",
+
+            ]);
+        }
         $student = Student::find($user->$student_id);
+        if(!$student_id){
+            return redirect('/connexionUser')->withErrors([
+                'email' => "Vous n'avez pas acces a cette page sans etre connecté",
+
+            ]);
+        }
         $entreprise =  Entreprise::find($entreprise_id);
+        if(!$entreprise_id){
+            return redirect('/connexionUser')->withErrors([
+                'email' => "Vous n'avez pas acces a cette page sans etre connecté",
+
+            ]);
+        }
 
         $candiatures  = Candidature::create([
             'id' => request('id'),
@@ -77,7 +104,8 @@ class ControllerCandidature extends Controller
             'offre_id' => request('offre_id'),
             'entreprise_id' => request('entreprise_id'),
 
-        ]);
 
+        ]);
+        return redirect('/felicitations');//Candidature prise en compte
     }
 }

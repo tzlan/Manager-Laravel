@@ -159,9 +159,13 @@ Route::get('/redirection_students_connecte', function (){
 Route::get('/redirection_admin_connecte', function (){
     return view('/redirection_admin_connecte');
 });
+Route::get('/felicitations', function (){
+    return view('/felicitations');
+});
 //<-----------------------------------Candidatures-------------------------------------------->
 //Lister les candidatures
 Route::get('/lister_candidatures', [App\Http\Controllers\ControllerCandidature::class, 'lister_candidatures']);
+Route::post('/postuler_offres/{student_id}/{offre_id}/{entreprise_id}', [App\Http\Controllers\ControllerCandidature::class , 'postuler_offres'])->name('postuler_offres');
 
 
 

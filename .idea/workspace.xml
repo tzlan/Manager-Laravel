@@ -23,8 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11244e0a-5dd3-4679-b4a8-ceef9bf6ed6e" name="Default Changelist" comment="Lister les candidatures en fonction de l'user">
+      <change afterPath="$PROJECT_DIR$/resources/views/felicitations.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerCandidature.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerCandidature.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerOffre.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerOffre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/accueil.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/accueil.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index_students.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index_students.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/offres/lister_offres.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/offres/lister_offres.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +168,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/candidatures" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -176,8 +182,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\talza\Desktop\Unniv\WEB\NewInstall\gestion2\resources\views\candidatures" />
       <recent name="C:\Users\talza\Desktop\Unniv\WEB\NewInstall\gestion2\resources\views" />
+      <recent name="C:\Users\talza\Desktop\Unniv\WEB\NewInstall\gestion2\resources\views\candidatures" />
       <recent name="C:\Users\talza\Desktop\Unniv\WEB\NewInstall\gestion2\resources" />
       <recent name="C:\Users\talza\Desktop\Unniv\WEB\NewInstall\gestion2\resources\views\connexions" />
       <recent name="C:\Users\Shazam\Desktop\Unniv\WEB\NouveauProjet\GestionStage\resources\lang" />
@@ -255,7 +261,9 @@
       <workItem from="1609004538493" duration="20643000" />
       <workItem from="1609080304687" duration="6948000" />
       <workItem from="1609102398254" duration="2767000" />
-      <workItem from="1609244109390" duration="1429000" />
+      <workItem from="1609244109390" duration="1719000" />
+      <workItem from="1609247456562" duration="2383000" />
+      <workItem from="1609277846597" duration="7035000" />
     </task>
     <task id="LOCAL-00001" summary="Vues">
       <created>1607553953194</created>

@@ -15,6 +15,7 @@ class ControllerOffre extends Controller
 
         if (auth()->check()) {
             $offres = Offre::all();//Fonction qui liste les offres
+            //dd(auth()->user());
             return view('offres/lister_offres', [
                 'offres' => $offres,
             ]);
