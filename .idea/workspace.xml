@@ -22,13 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11244e0a-5dd3-4679-b4a8-ceef9bf6ed6e" name="Default Changelist" comment="Footer + update student + differentes pages de redirections">
+    <list default="true" id="11244e0a-5dd3-4679-b4a8-ceef9bf6ed6e" name="Default Changelist" comment="Lister les candidatures en fonction de l'user">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerCandidature.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerCandidature.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerStudent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/candidatures/lister_candidatures.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/candidatures/lister_candidatures.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/redirection_entreprise_connecte.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/redirection_entreprise_connecte.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/students/lister_students.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students/lister_students.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,7 +253,9 @@
       <workItem from="1608854595896" duration="241000" />
       <workItem from="1608902765214" duration="1633000" />
       <workItem from="1609004538493" duration="20643000" />
-      <workItem from="1609080304687" duration="6818000" />
+      <workItem from="1609080304687" duration="6948000" />
+      <workItem from="1609102398254" duration="2767000" />
+      <workItem from="1609244109390" duration="1429000" />
     </task>
     <task id="LOCAL-00001" summary="Vues">
       <created>1607553953194</created>
@@ -294,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608591965918</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Lister les candidatures en fonction de l'user">
+      <created>1609087720061</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609087720061</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,6 +323,7 @@
     <MESSAGE value="Connexion User avec le message est connecté" />
     <MESSAGE value=" &quot;Footer + update student + differentes pages de redirections&quot;" />
     <MESSAGE value="Footer + update student + differentes pages de redirections" />
-    <option name="LAST_COMMIT_MESSAGE" value="Footer + update student + differentes pages de redirections" />
+    <MESSAGE value="Lister les candidatures en fonction de l'user" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lister les candidatures en fonction de l'user" />
   </component>
 </project>

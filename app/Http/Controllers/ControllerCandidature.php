@@ -45,6 +45,23 @@ class ControllerCandidature extends Controller
             'candidatures'=> $candidatures,
         ]);
     }
+ //   public function postuler(Offre  $offre){
+//
+//        $user = Auth::user();
+//
+//        'offre_id' => $offre->id,
+//        'student_id' => Auth::user()->id,
+//        'entreprise_id' => $offre->entreprise_id,
+//
+//        $candiatures  = Candidature::create([
+//            'id' => request('id'),
+//            'student_id' => request('student_id'),
+//            'offre_id' => request('offre_id'),
+//            'entreprise_id' => request('entreprise_id'),
+//
+//        ]);
+//
+//    }
 
     public function postuler($student_id,$offre_id,$entreprise_id){
 
