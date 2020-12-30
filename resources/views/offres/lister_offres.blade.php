@@ -49,9 +49,10 @@
             <li class="nav-item active">
                 <a class="nav-link" href="lister_students">Etudiants en recherche<span class="sr-only">(current)</span></a>
             </li>
-
+            <li class="nav-item active"><a class="nav-link" href="/deconnexion">Deconnexion  <span class="sr-only">(current)</span></a></li>
         </ul>
     </div>
+
 
 
 </nav>
@@ -62,59 +63,60 @@
     <br><br><br><br>
 
     <div class="container">
-<table  class=" table table-striped">
-    <thead>
-    <tr>
-        <th scope="col">Reférence offre</th>
-        <th scope="col">Nom</th>
-        <th scope="col">Description</th>
-        <th scope="col">Debut</th>
-        <th scope="col">Fin</th>
-        <th scope="col">Reférence entreprise</th>
-        @if(auth()->user()->entreprise_id)
-        <th scope="col">Modifier </th>
-        <th scope="col">Supprimer</th>
-        <th scope="col">Postuler</th>
-        @endif
-
-    </tr>
-    </thead>
-    <tbody>
-
-
-        @foreach($offres as $offre)
+        <table  class=" table table-striped">
+            <thead>
             <tr>
-            <td>{{$offre->id}}</td>
-            <td>{{$offre->name}}</td>
-            <td>{{$offre->description}}</td>
-            <td>{{$offre->start}}</td>
-            <td>{{$offre->end}}</td>
-            <td>{{$offre->entreprise_id}}</td>
-
-
+                <th scope="col">Reférence offre</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Description</th>
+                <th scope="col">Debut</th>
+                <th scope="col">Fin</th>
+                <th scope="col">Reférence entreprise</th>
                 @if(auth()->user()->entreprise_id)
-                <td><a href="{{url('offres/modifier_offres/'.$offre->id)}}" type="button" class="btn btn-warning">Modifier</a></td>
-                <td><a href="{{url('offres/lister_offres/'.$offre->id)}}" type="button" class="btn btn-danger">Supprimer</a></td>
-                <td>
-
-                    <form action="{{route('postuler_offres',[
-                                        'student_id'=>auth()->user()->students_id,
-                                        'offre_id'=>$offre->id,
-                                        'entreprise_id'=>$offre->entreprise_id]
-
-                                        )}}"
-
-                                        method="POST">
-                            @csrf
-                            <button  type="submit" class="btn btn-success">Postuler</button>
-                    </form>
-
-                </td>
+                    <th scope="col">Modifier </th>
+                    <th scope="col">Supprimer</th>
                 @endif
 
+                @if(auth()->user()->students_id)
+                <th scope="col">Postuler</th>
+                @endif
             </tr>
+            </thead>
+            <tbody>
+
+
+            @foreach($offres as $offre)
+                <tr>
+                    <td>{{$offre->id}}</td>
+                    <td>{{$offre->name}}</td>
+                    <td>{{$offre->description}}</td>
+                    <td>{{$offre->start}}</td>
+                    <td>{{$offre->end}}</td>
+                    <td>{{$offre->entreprise_id}}</td>
+
+
+                    @if(auth()->user()->entreprise_id)
+                        <td><a href="{{url('offres/modifier_offres/'.$offre->id)}}" type="button" class="btn btn-warning">Modifier</a></td>
+                        <td><a href="{{url('offres/lister_offres/'.$offre->id)}}" type="button" class="btn btn-danger">Supprimer</a></td>
+                    @endif
+                        <td>
+                        @if(auth()->user()->students_id)
+                                <form action="{{route('postuler_offres',[
+                                            'student_id'=>auth()->user()->students_id,
+                                            'offre_id'=>$offre->id,
+                                            'entreprise_id'=>$offre->entreprise_id]
+                                            )}}"
+
+                                      method="POST">
+                                    @csrf
+                                    <button  type="submit" class="btn btn-success">Postuler</button>
+                                </form>
+                        @endif
+                        </td>
+
+
+                </tr>
         @endforeach
 
+    </div>
 </div>
-</div>
-</table>

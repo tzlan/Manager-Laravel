@@ -53,9 +53,7 @@
                 <a class="nav-link" href=""> Etudiants en recherche <span class="sr-only">(current)</span></a>
             </li>
 
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Connection</a><span class="sr-only">(current)</span></a>
-            </li>
+
             <li class="nav-item active">
                 <a class="nav-link " href="inscription_students">Inscription</a><span class="sr-only">(current)</span></a>
             </li>
@@ -92,10 +90,10 @@
             <th scope="col">Classe</th>
             <th scope="col">Cv</th>
             <th scope="col">Statut</th>
+            @if(auth()->user()->tuteur_id)
             <th scope="col">Modifier </th>
-
             <th scope="col">Supprimer</th>
-
+            @endif
         </tr>
         </thead>
         <tbody>
@@ -109,11 +107,13 @@
                 <td>{{$student->class}}</td>
                 <td>{{$student->cv}}</td>
                 <td>{{$student->status}}</td>
-
+                @if(auth()->user()->tuteur_id)
 
                 <td><a href="{{url('students/modifier_students/'.$student->id)}}" type="button" class="btn btn-warning">Modifier</a></td>
                 <td><a href="{{url('students/lister_students/'.$student->id)}}" type="button" class="btn btn-danger">Supprimer</a></td>
             </tr>
+
+        @endif
     @endforeach
 
 </div>

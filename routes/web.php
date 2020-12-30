@@ -167,5 +167,14 @@ Route::get('/felicitations', function (){
 Route::get('/lister_candidatures', [App\Http\Controllers\ControllerCandidature::class, 'lister_candidatures']);
 Route::post('/postuler_offres/{student_id}/{offre_id}/{entreprise_id}', [App\Http\Controllers\ControllerCandidature::class , 'postuler_offres'])->name('postuler_offres');
 
+//<-----------------------------------Remarques-------------------------------------------->
+//<-----------------------------------Validation-------------------------------------------->
 
+//<-----------------------------------Stages-------------------------------------------->
+//Lister stages
+Route::get('/lister_stage', [App\Http\Controllers\ControllerStage::class, 'listerStages']);
+
+//Modifier stages
+Route::get('stages/modifier_stages/{id}',[App\Http\Controllers\ControllerStage::class, 'edit'])->name('modifier_stages');
+Route::post('stages/modifier_stages/{id}',[App\Http\Controllers\ControllerStage::class, 'update'])->name('update_stages');
 

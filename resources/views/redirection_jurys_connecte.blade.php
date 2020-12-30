@@ -47,15 +47,19 @@
                     <ul class="navbar-nav">
 
                         <li class="nav-item active">
-                            <a class="nav-link" href="lister_offres">Consulter stages <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="lister_offres">Consulter offres <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="lister_stage">Stages actifs <span class="sr-only">(current)</span></a>
                         </li>
 
+
+
                         <li class="nav-item active">
-                            <a class="nav-link" href="index_entreprise.blade.php">Valider stage <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="inscription_jury">Inscription <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index_tuteurs.blade.php">Ajouter une remarque <span class="sr-only">(current)</span></a>
-                        </li>
+
+
                     </ul>
                 </div>
                 <a class="nav-link" href="/deconnexion">Deconnexion  <span class="sr-only">(current)</span></a>

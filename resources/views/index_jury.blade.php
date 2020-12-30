@@ -46,16 +46,17 @@
             <li class="nav-item active">
                 <a class="nav-link" href="lister_offres">Consulter stages <span class="sr-only">(current)</span></a>
             </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="lister_stage">Les stages <span class="sr-only">(current)</span></a>
+            </li>
 
-            <li class="nav-item active">
-                <a class="nav-link" href="index_entreprise">Valider stage <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="index_tuteurs">Ajouter une remarque <span class="sr-only">(current)</span></a>
-            </li>
+
+
             <li class="nav-item active">
                 <a class="nav-link" href="inscription_jury">Inscription <span class="sr-only">(current)</span></a>
             </li>
+
+
 
 
 
