@@ -100,8 +100,18 @@
 
             @foreach($stages as $stage)
                 <tr>
+
                     <td>{{$stage->id}}</td>
-                    <td>{{$stage->validation_stage_jury}}</td>
+
+                    <td>
+                        @if ($stage->validation_stage_jury)
+
+                            Validé
+                        @else
+                            Non validé
+                        @endif
+
+                    </td>
                     <td>{{$stage->validation_convention_tuteur}}</td>
                     <td>{{$stage->remarque_tuteur}}</td>
                     <td>{{$stage->offre_id}}</td>

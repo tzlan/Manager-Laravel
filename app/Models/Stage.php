@@ -10,5 +10,9 @@ class Stage extends Model
 
     protected $fillable=['id','validation_stage_jury','validation_convention_tuteur','remarque_tuteur','remarque_tuteur','offre_id','entreprise_id','jury_id','student_id','tuteurs_id'];
     protected $table = 'stage';
+    protected $casts = ['validation_stage_jury' =>'boolean'];
+
+    public $timestamps = false;
+
     use HasFactory;
 }

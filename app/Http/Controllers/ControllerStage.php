@@ -7,23 +7,20 @@ use Illuminate\Http\Request;
 
 class ControllerStage extends Controller
 {
-    public function listerStages(){
-//       $user = Auth::user();
-//
-//        $stages= Stage::where('tuteur_id', $user->tuteur_id) ->get();
-//
-//        return view('stages/lister_stage',[
-//            'stages'=> $stages,
-//       ]);
+    public function listerStages()
+    {
 
-       // where. Stage::where(['tuteur_id' => $user->tuteur_id])->where('tuteur_id' => $user->tuteur_id)
-
-
+        $stages =null;
         if (auth()->check()) {
-            $stages = Stage::all();
+            if (auth()->user()->tuteurs_id) {
 
+                $stages = Stage::where('tuteurs_id',auth()->user()->tuteurs_id)->get();
+
+            }
+
+       dd($stages);
             return view('stages/lister_stage', [
-                'stages'=> $stages,
+                'stages' => $stages,
             ]);
         } else {
             return redirect('connexionUser')->withErrors([
@@ -36,13 +33,17 @@ class ControllerStage extends Controller
         $stage= Stage::find($id);
         $stages = Stage::all();
 
-        return view('stages/modifier_stages', compact('stage'));
+        $stage->update(['validation_stage_jury' =>true]);
+
+        return redirect('/lister_stage');
     }
 
     public function update(Request $request, $id ){
+
+       // dd($request->all());
         $this->validate($request,['id'=>'required|min:1', ]);
 
-        $stage=Student::find($id);
+        $stage=Stage::find($id);
 
         $stage->id=$request->id;
 

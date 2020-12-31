@@ -23,19 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11244e0a-5dd3-4679-b4a8-ceef9bf6ed6e" name="Default Changelist" comment="Lister les candidatures en fonction de l'user">
-      <change afterPath="$PROJECT_DIR$/resources/views/stages/lister_stage.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/stages/modifier_stages.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerCandidature.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerCandidature.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerStage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerStage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index_jury.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index_jury.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/navbarre.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navbarre.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/offres/lister_offres.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/offres/lister_offres.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/redirection_jurys_connecte.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/redirection_jurys_connecte.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/redirection_tuteurs_connecte.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/redirection_tuteurs_connecte.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/students/lister_students.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students/lister_students.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/users/lister_user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/lister_user.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Stage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Stage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/stages/lister_stage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/stages/lister_stage.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/stages/modifier_stages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/stages/modifier_stages.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,7 +264,9 @@
       <workItem from="1609320302710" duration="7326000" />
       <workItem from="1609328793454" duration="3442000" />
       <workItem from="1609342214228" duration="3113000" />
-      <workItem from="1609365309550" duration="1275000" />
+      <workItem from="1609365309550" duration="1926000" />
+      <workItem from="1609445196438" duration="816000" />
+      <workItem from="1609451208998" duration="3360000" />
     </task>
     <task id="LOCAL-00001" summary="Vues">
       <created>1607553953194</created>
