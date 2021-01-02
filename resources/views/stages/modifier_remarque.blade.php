@@ -43,61 +43,75 @@
 <br>
 <br>
 <div class="container p-3 my-3 border">
-    <h1>Modification d'un étudiant</h1>
+    <h1>Ajouter une remarque </h1>
     <br>
     <br>
     <br>
 
-    <form action="{{url('students/modifier_students/'.$student->id)}}" method="post">
+    <form action="{{url('stages/modifier_remarque/'.$stage->id)}}" method="post">
 
         {{csrf_field()}}
 
-        <p> <input type="text" name="id" value="{{$student->id}}" placeholder="Id etudiant" ></p>
+        <p> <input type="text" name="id" value="{{$stage->id}}"  disabled="disabled" ></p>
         @if($errors->has('id'))
-            <p>{{$errors->first('id')}}</p>
+
 
         @endif
 
 
-        <p>   <input type="text" name="name" value="{{$student->name}}" placeholder="Nom de l'étudiant "></p>
-        @if($errors->has('name'))
-            <p>{{$errors->first('name')}}</p>
+        <p>   <input type="text" name="validation_stage_jury"  value="{{$stage->validation_stage_jury}}" placeholder="Validation jury"    disabled="disabled" ></p>
+        @if($errors->has('validation_stage_jury'))
+        @endif
+
+        <p>   <input type="text" name="validation_convention_tuteur" value="{{$stage->validation_convention_tuteur}}"  placeholder="Validation convention tuteur"    disabled="disabled" ></p>
+        @if($errors->has('validation_convention_tuteur'))>
+        @endif
+
+        <p>   <input type="text" name="remarque_tuteur" value="{{$stage->remarque_tuteur}}" style="width: 190px; height: 100px;" placeholder="Remarque tuteur"   ></p>
+        @if($errors->has('remarque_tuteur'))
+
 
         @endif
 
-        <p>   <input type="text" name="first_name" value="{{$student->first_name}}" placeholder="Prenom de l'étudiant "></p>
-        @if($errors->has('first_name'))
-            <p>{{$errors->first('first_name')}}</p>
-
-        @endif
-
-        <p>   <input type="text" name="class" value="{{$student->class}}" placeholder="Classe de l'étudiant "></p>
-        @if($errors->has('class'))
-            <p>{{$errors->first('class')}}</p>
-
-        @endif
-
-        <p>   <input type="text" name="cv" value="{{$student->cv}}" placeholder="Lien vers le CV"></p>
-        @if($errors->has('cv'))
-            <p>{{$errors->first('cv')}}</p>
+        <p>   <input type="text" name="offre_id" value="{{$stage->offre_id}}" disabled="disabled" ></p>
+        @if($errors->has('offre_id'))
+            <p>{{$errors->first('offre_id')}}</p>
 
         @endif
 
 
-        <p>   <input type="text" name="motivation" value="{{$student->motivation}}" placeholder="Lien vers la LM"></p>
-        @if($errors->has('motivation'))
-            <p>{{$errors->first('motivation')}}</p>
+        <p>   <input type="text" name="entreprise_id" value="{{$stage->entreprise_id}}" disabled="disabled" ></p>
+        @if($errors->has('entreprise_id'))
+            <p>{{$errors->first('entreprise_id')}}</p>
 
         @endif
 
-        <p>   <input type="text" name="status" value="{{$student->status}}" placeholder="Statut"></p>
-        @if($errors->has('status'))
-            <p>{{$errors->first('status')}}</p>
+        <p>   <input type="text" name="jury_id" value="{{$stage->jury_id}}" disabled="disabled" ></p>
+        @if($errors->has('jury_id'))
+            <p>{{$errors->first('jury_id')}}</p>
+
+        @endif
+
+        <p>   <input type="text" name="student_id" value="{{$stage->student_id}}" disabled="disabled"  ></p>
+        @if($errors->has('student_id'))
+            <p>{{$errors->first('student_id')}}</p>
+
+        @endif
+
+        <p>   <input type="text" name="jury_id" value="{{$stage->jury_id}}" disabled="disabled" ></p>
+        @if($errors->has('jury_id'))
+            <p>{{$errors->first('jury_id')}}</p>
+
+        @endif
+
+        <p>   <input type="text" name="tuteurs_id" value="{{$stage->tuteurs_id}}" disabled="disabled" ></p>
+        @if($errors->has('tuteurs_id'))
+            <p>{{$errors->first('tuteurs_id')}}</p>
 
         @endif
 
 
-        <input type="submit" value="Modifier l'étudiant" >
+        <input type="submit"  value="Ajouter une remarque" >
     </form>
 </div>
 @endsection

@@ -33,26 +33,15 @@
 
 
 
+
 <nav class="navbar navbar-expand-lg navbar-dark .bg-danger " style="background-color: #d41010;">
 
-    <a class="navbar-brand" href="http://127.0.0.1:8000/">Université Paris Nanterre</a>
+    <a class="navbar-brand" href="/">Université Paris Nanterre</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-
-            <li class="nav-item active">
-                <a class="nav-link" href="lister_offres">Consulter les offres <span class="sr-only">(current)</span></a>
-            </li>
-
-            <li class="nav-item active">
-                <a class="nav-link" href="lister_stage">Les stages <span class="sr-only">(current)</span></a>
-            </li>
-
-
-
-
 
 
 
@@ -63,76 +52,47 @@
 
 </nav>
 
-<br><br><br><br>
-<div style="text-align: center;"><h1> Stages </h1>
-    <br><br>
+{{--Sert a faire heriter le comme include--}}
+@yield('content')
 
 
-    <div class="container">
-        <table  class=" table table-striped">
-            <thead>
-            <tr>
-
-                <th scope="col">Id</th>
-                <th scope="col">Validation jury </th>
-
-                <th scope="col">Validation tuteur </th>
-                <th scope="col">Remarque du tuteur </th>
-                <th scope="col">Ref offre </th>
-                <th scope="col">Entreprise_id </th>
-                <th scope="col">Jury_id </th>
-                <th scope="col">Student_id </th>
-                <th scope="col">Tuteur_id </th>
-
-                    <th scope="col">Valider </th>
-                    <th scope="col">Remarque</th>
+{{--ICI FIN DE LA NAVBARRE--}}
 
 
+<br><br><br><br><br><br>
 
 
+<div style="text-align: center;">
+    <h1>Votre remarque à bien été prise en compte</h1>
 
-            </tr>
-            </thead>
-            <tbody>
-
-
-
-
-            @foreach($stages as $stage)
-                <tr>
-
-                    <td>{{$stage->id}}</td>
-
-                    <td>
-
-                        @if ($stage->validation_stage_jury)
-                            Validé
-                        @else
-                            Non validé
-                        @endif
-
-                    </td>
-                    <td>
-                        @if ($stage->validation_convention_tuteur)
-                            Validé
-                        @else
-                            Non validé
-                        @endif
-
-                    </td>
-                    <td>{{$stage->remarque_tuteur}}</td>
-                    <td>{{$stage->offre_id}}</td>
-                    <td>{{$stage->entreprise_id}}</td>
-                    <td>{{$stage->jury_id}}</td>
-                    <td>{{$stage->student_id}}</td>
-                    <td>{{$stage->tuteurs_id}}</td>
-                    <td><a href="{{url('stages/modifier_stages/'.$stage->id)}}" type="button"    class="btn btn-success">Valider</a></td>
-                    <td><a href="{{url('stages/modifier_remarque/'.$stage->id)}}" type="button" class="btn btn-info">Remarque</a></td>
-                </tr>
-            @endforeach
-            </tbody>
-        </table>
-    </div>
 </div>
+
+
+
+
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

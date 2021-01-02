@@ -23,11 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11244e0a-5dd3-4679-b4a8-ceef9bf6ed6e" name="Default Changelist" comment="Lister les candidatures en fonction de l'user">
+      <change afterPath="$PROJECT_DIR$/resources/views/remarque_prise_en_compte.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/stages/modifier_remarque.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerStage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerStage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Stage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Stage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index_entreprise.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index_entreprise.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index_tuteurs.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index_tuteurs.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/stages/lister_stage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/stages/lister_stage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/stages/modifier_stages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/stages/modifier_stages.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/students/modifier_students.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/students/modifier_students.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,7 +271,10 @@
       <workItem from="1609342214228" duration="3113000" />
       <workItem from="1609365309550" duration="1926000" />
       <workItem from="1609445196438" duration="816000" />
-      <workItem from="1609451208998" duration="3360000" />
+      <workItem from="1609451208998" duration="3452000" />
+      <workItem from="1609464200788" duration="1510000" />
+      <workItem from="1609494113927" duration="5649000" />
+      <workItem from="1609610659832" duration="4685000" />
     </task>
     <task id="LOCAL-00001" summary="Vues">
       <created>1607553953194</created>

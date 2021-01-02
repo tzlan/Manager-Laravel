@@ -178,3 +178,5 @@ Route::get('/lister_stage', [App\Http\Controllers\ControllerStage::class, 'liste
 Route::get('stages/modifier_stages/{id}',[App\Http\Controllers\ControllerStage::class, 'edit'])->name('modifier_stages');
 Route::post('stages/modifier_stages/{id}',[App\Http\Controllers\ControllerStage::class, 'update'])->name('update_stages');
 
+Route::get('stages/modifier_remarque/{id}',[App\Http\Controllers\ControllerStage::class, 'editRemarque'])->name('modifier_remarque');
+Route::post('stages/modifier_remarque/{id}',[App\Http\Controllers\ControllerStage::class, 'updateRemarque'])->name('update_remarque');

@@ -44,14 +44,14 @@
         <ul class="navbar-nav">
 
             <li class="nav-item active">
-                <a class="nav-link" href="index_students.blade.php">Valider la convention <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="lister_stage">Valider la convention <span class="sr-only">(current)</span></a>
             </li>
 
             <li class="nav-item active">
                 <a class="nav-link" href="lister_offres">Consulter les offres  <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="index_tuteurs.blade.php">Ajouter une remarque <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="lister_stage">Ajouter une remarque <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="lister_tuteurs">Lister les tuteurs <span class="sr-only">(current)</span></a>

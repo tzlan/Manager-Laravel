@@ -9,18 +9,30 @@ class ControllerStage extends Controller
 {
     public function listerStages()
     {
+//
+//        $stages =null;
+//        if (auth()->check()) {
+//            if (auth()->user()->tuteurs_id) {
+//
+//                $stages = Stage::where('tuteurs_id',auth()->user()->tuteurs_id)->get();
+//
+//            }
+//
+//       //dd($stages);
+//            return view('stages/lister_stage', [
+//                'stages' => $stages,
+//            ]);
+//        } else {
+//            return redirect('connexionUser')->withErrors([
+//                'email' => "Vous devez obligatoirement etre connecté pour avoir ces informations"
+//            ]);
+//        }
 
-        $stages =null;
         if (auth()->check()) {
-            if (auth()->user()->tuteurs_id) {
+            $stages = Stage::all();
 
-                $stages = Stage::where('tuteurs_id',auth()->user()->tuteurs_id)->get();
-
-            }
-
-       dd($stages);
             return view('stages/lister_stage', [
-                'stages' => $stages,
+                'stages'=> $stages,
             ]);
         } else {
             return redirect('connexionUser')->withErrors([
@@ -28,40 +40,49 @@ class ControllerStage extends Controller
             ]);
         }
     }
-    public function edit($id){
+    public function edit($id)
+    {
+        $user = Auth::user();
+
+        if ($user->jury_id) {
+
+            $stage = Stage::find($id);
+
+            $stage->update(['validation_stage_jury' => true]);
+
+            return redirect('/lister_stage');
+        }
+
+
+        if ($user->tuteur_id) {
+
+            $stage = Stage::find($id);
+
+            $stage->update(['validation_convention_tuteur' => true]);
+
+            return redirect('/lister_stage');
+        }
+
+
+
+
+    }
+    public function editRemarque($id){
 
         $stage= Stage::find($id);
-        $stages = Stage::all();
 
-        $stage->update(['validation_stage_jury' =>true]);
-
-        return redirect('/lister_stage');
+        return view('stages/modifier_remarque', compact('stage'));
     }
 
-    public function update(Request $request, $id ){
+    public function updateRemarque(Request $request, $id ){
 
-       // dd($request->all());
-        $this->validate($request,['id'=>'required|min:1', ]);
 
         $stage=Stage::find($id);
-
-        $stage->id=$request->id;
-
-        $stage->validation_stage_jury=$request->validation_stage_jury;
-        $stage->validation_convention_tuteur=$request->validation_convention_tuteur;
-        $stage->remarque_tuteur=$request->remarque_tuteur;
-
-        $stage->offre_id=$request->offre_id;
-        $stage->entreprise_id=$request->entreprise_id;
-        $stage->jury_id=$request->jury_id;
-        $stage->student_id=$request->student_id;
-        $stage->tuteurs_id=$request->tuteurs_id;
-
-
+        $stage->remarque_tuteur=$request->get('remarque_tuteur');
 
         $stage->save();
 
-        return view('modification_prise_en_compte');
+        return view('remarque_prise_en_compte');
     }
 
 

@@ -50,7 +50,7 @@
 
 
             <li class="nav-item active">
-                <a class="nav-link" href="lister_students"> Etudiants Disponibles <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="lister_students"> Etudiants  <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link " href="lister_entreprises">Entreprises partenaires</a><span class="sr-only">(current)</span></a>
